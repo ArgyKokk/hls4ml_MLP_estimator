@@ -1,0 +1,116 @@
+Backend: Vitis
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    fc1:
+      Precision:
+        accum: fixed<16,6>
+        bias: fixed<8,1>
+        result: fixed<16,6>
+        weight: fixed<8,1>
+      ReuseFactor: 1
+      Trace: false
+    fc1_input:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    fc1_linear:
+      Precision:
+        result: fixed<16,6>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    fc2:
+      Precision:
+        accum: fixed<16,6>
+        bias: fixed<8,1>
+        result: fixed<16,6>
+        weight: fixed<8,1>
+      ReuseFactor: 1
+      Trace: false
+    fc2_linear:
+      Precision:
+        result: fixed<16,6>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    fc3:
+      Precision:
+        accum: fixed<16,6>
+        bias: fixed<8,1>
+        result: fixed<16,6>
+        weight: fixed<8,1>
+      ReuseFactor: 1
+      Trace: false
+    fc3_linear:
+      Precision:
+        result: fixed<16,6>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    output:
+      Precision:
+        accum: fixed<16,6>
+        bias: fixed<8,1>
+        result: fixed<16,6>
+        weight: fixed<8,1>
+      ReuseFactor: 1
+      Trace: false
+    output_linear:
+      Precision:
+        result: fixed<16,6>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    relu1:
+      Precision:
+        result: ufixed<8,0,RND_CONV,SAT>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    relu2:
+      Precision:
+        result: ufixed<8,0,RND_CONV,SAT>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    relu3:
+      Precision:
+        result: ufixed<8,0,RND_CONV,SAT>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    softmax:
+      Implementation: stable
+      Precision:
+        exp_table: fixed<18,8,RND,SAT>
+        inv_table: fixed<18,8,RND,SAT>
+        result: fixed<16,6>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      Skip: false
+      TableSize: 1024
+      Trace: false
+      exp_table_t: ap_fixed<18,8>
+      inv_table_t: ap_fixed<18,4>
+  Model:
+    BramFactor: 1000000000
+    Precision: fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_parallel
+InputData: null
+KerasModel: !keras_model 'jet_tagging/hls4ml_prj/keras_model.h5'
+OutputDir: jet_tagging/hls4ml_prj
+OutputPredictions: null
+Part: xc7z007s-clg225-2
+ProjectName: myproject
+Stamp: 88ceC420

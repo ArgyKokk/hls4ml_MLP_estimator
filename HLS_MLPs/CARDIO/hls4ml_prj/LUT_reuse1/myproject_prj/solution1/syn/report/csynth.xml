@@ -1,0 +1,595 @@
+<profile>
+    <ReportVersion>
+        <Version>2021.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z007s-clg225-2</Part>
+        <TopModelName>myproject</TopModelName>
+        <TargetClockPeriod>3.33</TargetClockPeriod>
+        <ClockUncertainty>0.42</ClockUncertainty>
+        <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>yes</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.947</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>22</Best-caseLatency>
+            <Average-caseLatency>22</Average-caseLatency>
+            <Worst-caseLatency>22</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.175 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.175 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.175 us</Worst-caseRealTimeLatency>
+            <PipelineInitiationInterval>1</PipelineInitiationInterval>
+            <PipelineDepth>23</PipelineDepth>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>3</BRAM_18K>
+            <DSP>0</DSP>
+            <FF>2585</FF>
+            <LUT>5243</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>100</BRAM_18K>
+            <DSP>66</DSP>
+            <FF>28800</FF>
+            <LUT>14400</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>myproject</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fc1_input</name>
+            <Object>fc1_input</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>168</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer7_out_0</name>
+            <Object>layer7_out_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer7_out_0_ap_vld</name>
+            <Object>layer7_out_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer7_out_1</name>
+            <Object>layer7_out_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer7_out_1_ap_vld</name>
+            <Object>layer7_out_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer7_out_2</name>
+            <Object>layer7_out_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>layer7_out_2_ap_vld</name>
+            <Object>layer7_out_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>myproject</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_dense_latency_ap_fixed_8_2_5_3_0_ap_fixed_16_4_5_3_0_config2_s_fu_69</InstName>
+                    <ModuleName>dense_latency_ap_fixed_8_2_5_3_0_ap_fixed_16_4_5_3_0_config2_s</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>69</ID>
+                </Instance>
+                <Instance>
+                    <InstName>grp_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_0_4_0_0_relu_config4_s_fu_75</InstName>
+                    <ModuleName>relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_0_4_0_0_relu_config4_s</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>75</ID>
+                </Instance>
+                <Instance>
+                    <InstName>grp_dense_latency_ap_ufixed_8_0_4_0_0_ap_fixed_16_4_5_3_0_config5_s_fu_82</InstName>
+                    <ModuleName>dense_latency_ap_ufixed_8_0_4_0_0_ap_fixed_16_4_5_3_0_config5_s</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>82</ID>
+                </Instance>
+                <Instance>
+                    <InstName>grp_softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config7_s_fu_89</InstName>
+                    <ModuleName>softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config7_s</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>89</ID>
+                </Instance>
+            </InstancesList>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>dense_latency_ap_fixed_8_2_5_3_0_ap_fixed_16_4_5_3_0_config2_s</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>3.33</TargetClockPeriod>
+                    <ClockUncertainty>0.42</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>5.282</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>4</Best-caseLatency>
+                    <Average-caseLatency>4</Average-caseLatency>
+                    <Worst-caseLatency>4</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>21.128 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>21.128 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>21.128 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>5</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>66</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <FF>1504</FF>
+                    <AVAIL_FF>28800</AVAIL_FF>
+                    <UTIL_FF>5</UTIL_FF>
+                    <LUT>3228</LUT>
+                    <AVAIL_LUT>14400</AVAIL_LUT>
+                    <UTIL_LUT>22</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_0_4_0_0_relu_config4_s</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>3.33</TargetClockPeriod>
+                    <ClockUncertainty>0.42</ClockUncertainty>
+                    <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+                    <EstimatedClockPeriod>2.587</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1</Best-caseLatency>
+                    <Average-caseLatency>1</Average-caseLatency>
+                    <Worst-caseLatency>1</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>3.330 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>3.330 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>3.330 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>2</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>103</FF>
+                    <AVAIL_FF>28800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>168</LUT>
+                    <AVAIL_LUT>14400</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>66</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>dense_latency_ap_ufixed_8_0_4_0_0_ap_fixed_16_4_5_3_0_config5_s</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>3.33</TargetClockPeriod>
+                    <ClockUncertainty>0.42</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>5.282</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>2</Best-caseLatency>
+                    <Average-caseLatency>2</Average-caseLatency>
+                    <Worst-caseLatency>2</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>10.564 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>10.564 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>10.564 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>3</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>66</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <FF>229</FF>
+                    <AVAIL_FF>28800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>341</LUT>
+                    <AVAIL_LUT>14400</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config7_s</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>3.33</TargetClockPeriod>
+                    <ClockUncertainty>0.42</ClockUncertainty>
+                    <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+                    <EstimatedClockPeriod>7.947</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>79.474 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>79.474 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>79.474 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>11</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>3</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>3</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>66</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <FF>605</FF>
+                    <AVAIL_FF>28800</AVAIL_FF>
+                    <UTIL_FF>2</UTIL_FF>
+                    <LUT>1504</LUT>
+                    <AVAIL_LUT>14400</AVAIL_LUT>
+                    <UTIL_LUT>10</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>myproject</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>3.33</TargetClockPeriod>
+                    <ClockUncertainty>0.42</ClockUncertainty>
+                    <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+                    <EstimatedClockPeriod>7.947</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>22</Best-caseLatency>
+                    <Average-caseLatency>22</Average-caseLatency>
+                    <Worst-caseLatency>22</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.175 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.175 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.175 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>23</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>3</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>3</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>66</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <FF>2585</FF>
+                    <AVAIL_FF>28800</AVAIL_FF>
+                    <UTIL_FF>8</UTIL_FF>
+                    <LUT>5243</LUT>
+                    <AVAIL_LUT>14400</AVAIL_LUT>
+                    <UTIL_LUT>36</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_op>
+            <ENTRY impl="fabric" op="mul"/>
+        </config_op>
+        <config_schedule enable_dsp_full_reg="0"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="fc1_input" index="0" direction="in" srcType="ap_fixed&lt;8, 2, AP_TRN, AP_WRAP, 0&gt;*" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="fc1_input" name="fc1_input" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="layer7_out" index="1" direction="out" srcType="ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="layer7_out_0" name="layer7_out_0" usage="data" direction="out"/>
+                <hwRef type="port" interface="layer7_out_0_ap_vld" name="layer7_out_0_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="layer7_out_1" name="layer7_out_1" usage="data" direction="out"/>
+                <hwRef type="port" interface="layer7_out_1_ap_vld" name="layer7_out_1_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="layer7_out_2" name="layer7_out_2" usage="data" direction="out"/>
+                <hwRef type="port" interface="layer7_out_2_ap_vld" name="layer7_out_2_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="fc1_input" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="168">
+            <portMaps>
+                <portMap portMapName="fc1_input">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>fc1_input</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="fc1_input"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="layer7_out_0" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="layer7_out_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>layer7_out_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="layer7_out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="layer7_out_1" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="layer7_out_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>layer7_out_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="layer7_out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="layer7_out_2" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="layer7_out_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>layer7_out_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="layer7_out"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="REGISTER">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="fc1_input">ap_none, 168</column>
+                    <column name="layer7_out_0">ap_none, 16</column>
+                    <column name="layer7_out_1">ap_none, 16</column>
+                    <column name="layer7_out_2">ap_none, 16</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="fc1_input">in, ap_fixed&lt;8 2 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="layer7_out">out, ap_fixed&lt;16 6 AP_TRN AP_WRAP 0&gt;*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Name, HW Type</keys>
+                    <column name="fc1_input">fc1_input, port</column>
+                    <column name="layer7_out">layer7_out_0, port</column>
+                    <column name="layer7_out">layer7_out_0_ap_vld, port</column>
+                    <column name="layer7_out">layer7_out_1, port</column>
+                    <column name="layer7_out">layer7_out_1_ap_vld, port</column>
+                    <column name="layer7_out">layer7_out_2, port</column>
+                    <column name="layer7_out">layer7_out_2_ap_vld, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+

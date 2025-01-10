@@ -1,0 +1,106 @@
+
+
+================================================================
+== Synthesis Summary Report of 'myproject'
+================================================================
++ General Information: 
+    * Date:           Thu Jul 20 12:18:12 2023
+    * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+    * Project:        myproject_prj
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z007s-clg225-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+----------+------------+---------------+----------------+-----+
+    |                                      Modules                                     | Issue|      | Latency | Latency | Iteration|         | Trip |          |          |            |               |                |     |
+    |                                      & Loops                                     | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|   BRAM   |     DSP    |       FF      |       LUT      | URAM|
+    +----------------------------------------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+----------+------------+---------------+----------------+-----+
+    |+ myproject                                                                       |    II|  0.00|       85|  425.000|         -|        2|     -|       yes|  10 (10%)|  657 (995%)|  176831 (613%)|  215814 (1498%)|    -|
+    | + grp_dense_latency_ap_fixed_8_2_5_3_0_ap_fixed_16_4_5_3_0_config2_s_fu_140      |     -|  0.02|       48|  240.000|         -|        2|     -|       yes|         -|  120 (181%)|  106087 (368%)|   118173 (820%)|    -|
+    | + call_ret1_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config4_s_fu_146   |    II|  0.84|        0|    0.000|         -|        1|     -|       yes|         -|           -|              -|      2408 (16%)|    -|
+    | + grp_dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config5_s_fu_206     |     -|  0.00|        5|   25.000|         -|        2|     -|       yes|         -|  219 (331%)|   36101 (125%)|    50963 (353%)|    -|
+    | + call_ret3_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config7_s_fu_266   |    II|  0.84|        0|    0.000|         -|        1|     -|       yes|         -|           -|              -|      2752 (19%)|    -|
+    | + grp_dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config8_s_fu_334     |     -|  0.00|        6|   30.000|         -|        2|     -|       yes|         -|  188 (284%)|    23031 (79%)|    32059 (222%)|    -|
+    | + call_ret5_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config10_s_fu_402  |    II|  0.84|        0|    0.000|         -|        1|     -|       yes|         -|           -|              -|       1290 (8%)|    -|
+    | + grp_dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config11_s_fu_436    |     -|  0.56|        5|   25.000|         -|        2|     -|       yes|         -|  120 (181%)|     5721 (19%)|      6632 (46%)|    -|
+    | + grp_softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config13_s_fu_470      |    II|  0.04|       14|   70.000|         -|        1|     -|       yes|  10 (10%)|    10 (15%)|      2082 (7%)|      1513 (10%)|    -|
+    +----------------------------------------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+----------+------------+---------------+----------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* REGISTER
++---------------+---------+----------+
+| Interface     | Mode    | Bitwidth |
++---------------+---------+----------+
+| fc1_input     | ap_none | 1568     |
+| layer13_out_0 | ap_none | 16       |
+| layer13_out_1 | ap_none | 16       |
+| layer13_out_2 | ap_none | 16       |
+| layer13_out_3 | ap_none | 16       |
+| layer13_out_4 | ap_none | 16       |
+| layer13_out_5 | ap_none | 16       |
+| layer13_out_6 | ap_none | 16       |
+| layer13_out_7 | ap_none | 16       |
+| layer13_out_8 | ap_none | 16       |
+| layer13_out_9 | ap_none | 16       |
++---------------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+--------------------------------------+
+| Argument    | Direction | Datatype                             |
++-------------+-----------+--------------------------------------+
+| fc1_input   | in        | ap_fixed<8, 2, AP_TRN, AP_WRAP, 0>*  |
+| layer13_out | out       | ap_fixed<16, 4, AP_TRN, AP_WRAP, 0>* |
++-------------+-----------+--------------------------------------+
+
+* SW-to-HW Mapping
++-------------+----------------------+---------+
+| Argument    | HW Name              | HW Type |
++-------------+----------------------+---------+
+| fc1_input   | fc1_input            | port    |
+| layer13_out | layer13_out_0        | port    |
+| layer13_out | layer13_out_0_ap_vld | port    |
+| layer13_out | layer13_out_1        | port    |
+| layer13_out | layer13_out_1_ap_vld | port    |
+| layer13_out | layer13_out_2        | port    |
+| layer13_out | layer13_out_2_ap_vld | port    |
+| layer13_out | layer13_out_3        | port    |
+| layer13_out | layer13_out_3_ap_vld | port    |
+| layer13_out | layer13_out_4        | port    |
+| layer13_out | layer13_out_4_ap_vld | port    |
+| layer13_out | layer13_out_5        | port    |
+| layer13_out | layer13_out_5_ap_vld | port    |
+| layer13_out | layer13_out_6        | port    |
+| layer13_out | layer13_out_6_ap_vld | port    |
+| layer13_out | layer13_out_7        | port    |
+| layer13_out | layer13_out_7_ap_vld | port    |
+| layer13_out | layer13_out_8        | port    |
+| layer13_out | layer13_out_8_ap_vld | port    |
+| layer13_out | layer13_out_9        | port    |
+| layer13_out | layer13_out_9_ap_vld | port    |
++-------------+----------------------+---------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+

@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1689759731594">
+  <ports id="1" name="fc1_input" type="PortType" coreId="3621216858" bitwidth="80">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="layer10_out_0" type="PortType" coreId="1715172207" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="layer10_out_1" type="PortType" coreId="3744029936" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="55" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="58" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="60" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="61" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="63" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="66" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="69" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="72" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="74" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="83" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="84" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="85" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="89" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="90" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="91" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="95" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="96" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
+  <edges id="115" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@ports.1"/>
+  <edges id="121" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.34"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.35"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@ports.2"/>
+  <edges id="125" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="126" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
+  <edges id="127" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
+  <regions anchor_node="-1" region_type="8" interval="2" typeName="Pipeline" iiViolation="" id="217" pipe_depth="21" RegionName="myproject">
+    <basic_blocks id="52" name="myproject" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="fc1_input_read" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." coreId="3743494400" contextFuncName="dense_ap_fixed_8_2_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config2_s" bitwidth="80" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_fixed&amp;lt;8, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <dataInputObjs>fc1_input</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="call_ret" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." rtlName="grp_dense_latency_ap_fixed_8_2_5_3_0_ap_fixed_16_4_5_3_0_config2_s_fu_68" coreId="3744262960" contextFuncName="dense_ap_fixed_8_2_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config2_s" bitwidth="80" opcode="call" nodeLatency="3" m_display="0" m_delay="3.81" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_fixed&amp;lt;8, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <constName>dense_latency_ap_fixed_8_2_5_3_0_ap_fixed_16_4_5_3_0_config2_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="layer2_out_V_0" lineNumber="41" originalName="layer2_out.V[0]" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." coreId="1763731310" contextFuncName="dense_ap_fixed_8_2_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config2_s" bitwidth="16" opcode="extractvalue" nodeLabel="3.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_fixed&amp;lt;8, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="layer2_out_V_1" lineNumber="41" originalName="layer2_out.V[1]" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." coreId="1953198949" contextFuncName="dense_ap_fixed_8_2_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config2_s" bitwidth="16" opcode="extractvalue" nodeLabel="3.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_fixed&amp;lt;8, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="layer2_out_V_2" lineNumber="41" originalName="layer2_out.V[2]" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." coreId="3742324880" contextFuncName="dense_ap_fixed_8_2_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config2_s" bitwidth="16" opcode="extractvalue" nodeLabel="3.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_fixed&amp;lt;8, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="layer2_out_V_3" lineNumber="41" originalName="layer2_out.V[3]" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." coreId="3744125136" contextFuncName="dense_ap_fixed_8_2_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config2_s" bitwidth="16" opcode="extractvalue" nodeLabel="3.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_fixed&amp;lt;8, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="layer2_out_V_4" lineNumber="41" originalName="layer2_out.V[4]" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." coreId="3742324880" contextFuncName="dense_ap_fixed_8_2_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config2_s" bitwidth="16" opcode="extractvalue" nodeLabel="3.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_fixed&amp;lt;8, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="call_ret1" lineNumber="47" fileName="firmware/myproject.cpp" fileDirectory=".." rtlName="call_ret1_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_0_4_0_0_relu_config4_s_fu_74" coreId="3742324880" contextFuncName="myproject" bitwidth="40" opcode="call" nodeLabel="4.0" m_display="0" m_delay="3.54" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <constName>relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_0_4_0_0_relu_config4_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="layer4_out_V_0" lineNumber="47" originalName="layer4_out.V[0]" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="3743400544" contextFuncName="myproject" bitwidth="8" opcode="extractvalue" nodeLabel="4.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="layer4_out_V_1" lineNumber="47" originalName="layer4_out.V[1]" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="3742324880" contextFuncName="myproject" bitwidth="8" opcode="extractvalue" nodeLabel="4.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="layer4_out_V_2" lineNumber="47" originalName="layer4_out.V[2]" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="216" contextFuncName="myproject" bitwidth="8" opcode="extractvalue" nodeLabel="4.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="layer4_out_V_3" lineNumber="47" originalName="layer4_out.V[3]" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="3744029936" contextFuncName="myproject" bitwidth="8" opcode="extractvalue" nodeLabel="4.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="layer4_out_V_4" lineNumber="47" originalName="layer4_out.V[4]" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="3744022520" contextFuncName="myproject" bitwidth="8" opcode="extractvalue" nodeLabel="4.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="call_ret2" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." rtlName="grp_dense_latency_ap_ufixed_8_0_4_0_0_ap_fixed_16_4_5_3_0_config5_s_fu_83" coreId="3743398176" contextFuncName="dense_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config5_s" bitwidth="32" opcode="call" nodeLabel="5.0" nodeLatency="2" m_display="0" m_delay="3.81" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config5&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <constName>dense_latency_ap_ufixed_8_0_4_0_0_ap_fixed_16_4_5_3_0_config5_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="layer5_out_V_1" lineNumber="41" originalName="layer5_out.V[1]" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." coreId="3744120752" contextFuncName="dense_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config5_s" bitwidth="16" opcode="extractvalue" nodeLabel="7.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config5&amp;gt;"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="empty" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." rtlName="empty_fu_170_p1" coreId="3744147216" contextFuncName="dense_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config5_s" bitwidth="15" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config5&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="layer5_out_V_2" lineNumber="41" originalName="layer5_out.V[2]" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." coreId="1330007552" contextFuncName="dense_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config5_s" bitwidth="16" opcode="extractvalue" nodeLabel="7.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config5&amp;gt;"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="trunc_ln41" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." rtlName="trunc_ln41_fu_178_p1" coreId="3743495312" contextFuncName="dense_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config5_s" bitwidth="15" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config5&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="call_ret3" lineNumber="55" fileName="firmware/myproject.cpp" fileDirectory=".." rtlName="call_ret3_normalize_ap_fixed_16_4_5_3_0_ap_fixed_16_4_5_3_0_config11_s_fu_92" coreId="3744135744" contextFuncName="myproject" bitwidth="32" opcode="call" nodeLabel="8.0" m_display="0" m_delay="1.79" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <constName>normalize_ap_fixed_16_4_5_3_0_ap_fixed_16_4_5_3_0_config11_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="layer11_out_V_1" lineNumber="55" originalName="layer11_out.V[1]" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="622865508" contextFuncName="myproject" bitwidth="16" opcode="extractvalue" nodeLabel="8.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="layer11_out_V_2" lineNumber="55" originalName="layer11_out.V[2]" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="0" contextFuncName="myproject" bitwidth="16" opcode="extractvalue" nodeLabel="8.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="call_ret4" lineNumber="59" fileName="firmware/myproject.cpp" fileDirectory=".." rtlName="call_ret4_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_0_4_0_0_relu_config7_s_fu_98" coreId="0" contextFuncName="myproject" bitwidth="16" opcode="call" nodeLabel="9.0" m_display="0" m_delay="3.54" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <constName>relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_0_4_0_0_relu_config7_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="layer7_out_V_1" lineNumber="59" originalName="layer7_out.V[1]" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="1397508187" contextFuncName="myproject" bitwidth="8" opcode="extractvalue" nodeLabel="9.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="layer7_out_V_2" lineNumber="59" originalName="layer7_out.V[2]" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="3743239600" contextFuncName="myproject" bitwidth="8" opcode="extractvalue" nodeLabel="9.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="call_ret5" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." rtlName="grp_dense_latency_ap_ufixed_8_0_4_0_0_ap_fixed_16_4_5_3_0_config8_s_fu_104" coreId="542329928" contextFuncName="dense_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config8_s" bitwidth="32" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="3.81" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config8&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <constName>dense_latency_ap_ufixed_8_0_4_0_0_ap_fixed_16_4_5_3_0_config8_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="layer8_out_V_0" lineNumber="41" originalName="layer8_out.V[0]" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." coreId="3744100352" contextFuncName="dense_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config8_s" bitwidth="16" opcode="extractvalue" nodeLabel="11.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config8&amp;gt;"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="trunc_ln41_1" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." rtlName="trunc_ln41_1_fu_202_p1" coreId="3744271968" contextFuncName="dense_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config8_s" bitwidth="15" opcode="trunc" nodeLabel="11.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config8&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="layer8_out_V_1" lineNumber="41" originalName="layer8_out.V[1]" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." coreId="3743337056" contextFuncName="dense_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config8_s" bitwidth="16" opcode="extractvalue" nodeLabel="11.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config8&amp;gt;"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="trunc_ln41_2" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory=".." rtlName="trunc_ln41_2_fu_210_p1" coreId="176" contextFuncName="dense_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_config8_s" bitwidth="15" opcode="trunc" nodeLabel="11.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="dense&amp;lt;ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config8&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="call_ret6" lineNumber="67" fileName="firmware/myproject.cpp" fileDirectory=".." rtlName="call_ret6_normalize_ap_fixed_16_4_5_3_0_ap_fixed_16_4_5_3_0_config12_s_fu_110" coreId="3744089088" contextFuncName="myproject" bitwidth="32" opcode="call" nodeLabel="12.0" m_display="0" m_delay="1.79" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="67" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <constName>normalize_ap_fixed_16_4_5_3_0_ap_fixed_16_4_5_3_0_config12_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="layer12_out_V_0" lineNumber="67" originalName="layer12_out.V[0]" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="3744089880" contextFuncName="myproject" bitwidth="16" opcode="extractvalue" nodeLabel="12.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="67" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="layer12_out_V_1" lineNumber="67" originalName="layer12_out.V[1]" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="3744090704" contextFuncName="myproject" bitwidth="16" opcode="extractvalue" nodeLabel="12.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="67" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="call_ret7" lineNumber="386" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory=".." rtlName="grp_softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config10_s_fu_116" coreId="3743423568" contextFuncName="softmax_ap_fixed_16_4_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_softmax_config10_s" bitwidth="32" opcode="call" nodeLabel="12.0" nodeLatency="8" m_display="0" m_delay="2.13" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="386" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="softmax&amp;lt;ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config10&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <constName>softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config10_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="layer10_out_0_ret" lineNumber="386" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory=".." coreId="3743398912" contextFuncName="softmax_ap_fixed_16_4_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_softmax_config10_s" bitwidth="16" opcode="extractvalue" nodeLabel="20.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="386" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="softmax&amp;lt;ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config10&amp;gt;"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="layer10_out_0_write_ln386" lineNumber="386" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory=".." coreId="3743428912" contextFuncName="softmax_ap_fixed_16_4_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_softmax_config10_s" opcode="write" nodeLabel="20.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="386" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="softmax&amp;lt;ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config10&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>layer10_out_0</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="layer10_out_1_ret" lineNumber="386" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory=".." coreId="3743656720" contextFuncName="softmax_ap_fixed_16_4_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_softmax_config10_s" bitwidth="16" opcode="extractvalue" nodeLabel="20.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="386" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="softmax&amp;lt;ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config10&amp;gt;"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="layer10_out_1_write_ln386" lineNumber="386" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory=".." coreId="1667590754" contextFuncName="softmax_ap_fixed_16_4_AP_TRN_AP_WRAP_0_ap_fixed_16_4_AP_TRN_AP_WRAP_0_softmax_config10_s" opcode="write" nodeLabel="20.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="386" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="softmax&amp;lt;ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config10&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>layer10_out_1</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="_ln71" lineNumber="71" fileName="firmware/myproject.cpp" fileDirectory=".." coreId="3743769392" contextFuncName="myproject" opcode="ret" nodeLabel="20.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="71" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/DSP_reuse2" functionName="myproject"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_dense.h">
+        <validLinenumbers>41</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="firmware/myproject.cpp">
+        <validLinenumbers>47</validLinenumbers>
+        <validLinenumbers>55</validLinenumbers>
+        <validLinenumbers>59</validLinenumbers>
+        <validLinenumbers>67</validLinenumbers>
+        <validLinenumbers>71</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_activation.h">
+        <validLinenumbers>386</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <regnodes realName="layer11_out_V_2_reg_299">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="layer11_out_V_1_reg_294">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="layer2_out_V_2_reg_244">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="layer7_out_V_2_reg_309">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln41_2_reg_319">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="layer7_out_V_1_reg_304">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="layer2_out_V_4_reg_254">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="layer4_out_V_0_reg_259">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln41_reg_289">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="layer2_out_V_3_reg_249">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="layer4_out_V_1_reg_264">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="layer4_out_V_2_reg_269">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="layer4_out_V_4_reg_279">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_reg_284">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="layer2_out_V_0_reg_234">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="layer2_out_V_1_reg_239">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="layer4_out_V_3_reg_274">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln41_1_reg_314">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <expressionNodes realName="layer2_out_V_0_fu_126">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer5_out_V_2_fu_174">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln41_2_fu_210">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer4_out_V_4_fu_162">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer4_out_V_2_fu_154">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer4_out_V_1_fu_150">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer4_out_V_3_fu_158">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer12_out_V_0_fu_214">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer2_out_V_4_fu_142">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer7_out_V_2_fu_194">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer12_out_V_1_fu_219">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer8_out_V_0_fu_198">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer10_out_1_ret_fu_229">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer7_out_V_1_fu_190">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln41_1_fu_202">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer5_out_V_1_fu_166">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer2_out_V_2_fu_134">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer11_out_V_1_fu_182">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer2_out_V_1_fu_130">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer10_out_0_ret_fu_224">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer11_out_V_2_fu_186">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_fu_170">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer8_out_V_1_fu_206">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln41_fu_178">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer4_out_V_0_fu_146">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer2_out_V_3_fu_138">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_dense_latency_ap_ufixed_8_0_4_0_0_ap_fixed_16_4_5_3_0_config8_s_fu_104">
+    <nodeIds>38</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ret4_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_0_4_0_0_relu_config7_s_fu_98">
+    <nodeIds>35</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ret6_normalize_ap_fixed_16_4_5_3_0_ap_fixed_16_4_5_3_0_config12_s_fu_110">
+    <nodeIds>43</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ret3_normalize_ap_fixed_16_4_5_3_0_ap_fixed_16_4_5_3_0_config11_s_fu_92">
+    <nodeIds>32</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config10_s_fu_116">
+    <nodeIds>46</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ret1_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_0_4_0_0_relu_config4_s_fu_74">
+    <nodeIds>21</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dense_latency_ap_fixed_8_2_5_3_0_ap_fixed_16_4_5_3_0_config2_s_fu_68">
+    <nodeIds>15</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dense_latency_ap_ufixed_8_0_4_0_0_ap_fixed_16_4_5_3_0_config5_s_fu_83">
+    <nodeIds>27</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="write_ln386_write_fu_54">
+    <nodeIds>48</nodeIds>
+  </ioNodes>
+  <ioNodes realName="fc1_input_read_read_fu_48">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln386_write_fu_61">
+    <nodeIds>50</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="exp_table" portID="100">
+    <nodeIds>46</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="invert_table" portID="100">
+    <nodeIds>46</nodeIds>
+  </memoryPorts>
+  <ioPorts name="fc1_input">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="layer10_out_0">
+    <contents name="write">
+      <nodeIds>48</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="layer10_out_1">
+    <contents name="write">
+      <nodeIds>50</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="4" latency="4"/>
+    </states>
+    <states id="2">
+      <operations id="15" stage="3" latency="4"/>
+    </states>
+    <states id="3">
+      <operations id="15" stage="2" latency="4"/>
+    </states>
+    <states id="4">
+      <operations id="15" stage="1" latency="4"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="27" stage="3" latency="3"/>
+    </states>
+    <states id="7">
+      <operations id="27" stage="2" latency="3"/>
+    </states>
+    <states id="8">
+      <operations id="27" stage="1" latency="3"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="38" stage="2" latency="2"/>
+    </states>
+    <states id="12">
+      <operations id="38" stage="1" latency="2"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+    </states>
+    <states id="13">
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="9" latency="9"/>
+    </states>
+    <states id="14">
+      <operations id="46" stage="8" latency="9"/>
+    </states>
+    <states id="15">
+      <operations id="46" stage="7" latency="9"/>
+    </states>
+    <states id="16">
+      <operations id="46" stage="6" latency="9"/>
+    </states>
+    <states id="17">
+      <operations id="46" stage="5" latency="9"/>
+    </states>
+    <states id="18">
+      <operations id="46" stage="4" latency="9"/>
+    </states>
+    <states id="19">
+      <operations id="46" stage="3" latency="9"/>
+    </states>
+    <states id="20">
+      <operations id="46" stage="2" latency="9"/>
+    </states>
+    <states id="21">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="9"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="myproject" mII="2" mDepth="21" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="20" mMaxLatency="20">
+      <basicBlocks>52</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

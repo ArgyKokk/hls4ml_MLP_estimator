@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/argykokk/Desktop/one_multiplication/MLPs/jet_tagging/hls4ml_prj/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp

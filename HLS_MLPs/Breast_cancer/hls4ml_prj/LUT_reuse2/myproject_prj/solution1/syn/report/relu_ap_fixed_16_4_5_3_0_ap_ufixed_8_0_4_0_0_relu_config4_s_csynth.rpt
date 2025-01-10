@@ -1,0 +1,169 @@
+
+
+================================================================
+== Vitis HLS Report for 'relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_0_4_0_0_relu_config4_s'
+================================================================
+* Date:           Wed Jul 19 12:37:23 2023
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z007s-clg225-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.547 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|    215|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   -|      -|      -|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      -|      -|    -|
+|Register         |        -|   -|      -|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|      0|    215|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      100|  66|  28800|  14400|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|      0|      1|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln415_2_fu_284_p2      |         +|   0|  0|   8|           8|           8|
+    |add_ln415_3_fu_418_p2      |         +|   0|  0|   8|           8|           8|
+    |add_ln415_4_fu_552_p2      |         +|   0|  0|   8|           8|           8|
+    |add_ln415_5_fu_686_p2      |         +|   0|  0|   8|           8|           8|
+    |add_ln415_fu_150_p2        |         +|   0|  0|   8|           8|           8|
+    |and_ln412_2_fu_274_p2      |       and|   0|  0|   1|           1|           1|
+    |and_ln412_3_fu_408_p2      |       and|   0|  0|   1|           1|           1|
+    |and_ln412_4_fu_542_p2      |       and|   0|  0|   1|           1|           1|
+    |and_ln412_5_fu_676_p2      |       and|   0|  0|   1|           1|           1|
+    |and_ln412_fu_140_p2        |       and|   0|  0|   1|           1|           1|
+    |icmp_ln1049_2_fu_308_p2    |      icmp|   0|  0|   2|           4|           2|
+    |icmp_ln1049_3_fu_442_p2    |      icmp|   0|  0|   2|           4|           2|
+    |icmp_ln1049_4_fu_576_p2    |      icmp|   0|  0|   2|           4|           2|
+    |icmp_ln1049_5_fu_710_p2    |      icmp|   0|  0|   2|           4|           2|
+    |icmp_ln1049_fu_174_p2      |      icmp|   0|  0|   2|           4|           2|
+    |icmp_ln1547_1_fu_218_p2    |      icmp|   0|  0|   7|          16|           1|
+    |icmp_ln1547_2_fu_352_p2    |      icmp|   0|  0|   7|          16|           1|
+    |icmp_ln1547_3_fu_486_p2    |      icmp|   0|  0|   7|          16|           1|
+    |icmp_ln1547_4_fu_620_p2    |      icmp|   0|  0|   7|          16|           1|
+    |icmp_ln1547_fu_84_p2       |      icmp|   0|  0|   7|          16|           1|
+    |icmp_ln727_2_fu_254_p2     |      icmp|   0|  0|   2|           3|           1|
+    |icmp_ln727_3_fu_388_p2     |      icmp|   0|  0|   2|           3|           1|
+    |icmp_ln727_4_fu_522_p2     |      icmp|   0|  0|   2|           3|           1|
+    |icmp_ln727_5_fu_656_p2     |      icmp|   0|  0|   2|           3|           1|
+    |icmp_ln727_fu_120_p2       |      icmp|   0|  0|   2|           3|           1|
+    |icmp_ln777_2_fu_314_p2     |      icmp|   0|  0|   2|           4|           1|
+    |icmp_ln777_3_fu_448_p2     |      icmp|   0|  0|   2|           4|           1|
+    |icmp_ln777_4_fu_582_p2     |      icmp|   0|  0|   2|           4|           1|
+    |icmp_ln777_5_fu_716_p2     |      icmp|   0|  0|   2|           4|           1|
+    |icmp_ln777_fu_180_p2       |      icmp|   0|  0|   2|           4|           1|
+    |or_ln412_1_fu_268_p2       |        or|   0|  0|   1|           1|           1|
+    |or_ln412_2_fu_402_p2       |        or|   0|  0|   1|           1|           1|
+    |or_ln412_3_fu_536_p2       |        or|   0|  0|   1|           1|           1|
+    |or_ln412_4_fu_670_p2       |        or|   0|  0|   1|           1|           1|
+    |or_ln412_fu_134_p2         |        or|   0|  0|   1|           1|           1|
+    |select_ln1547_2_fu_344_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln1547_3_fu_478_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln1547_4_fu_612_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln1547_5_fu_746_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln1547_fu_210_p3    |    select|   0|  0|   8|           1|           8|
+    |select_ln394_2_fu_336_p3   |    select|   0|  0|   8|           1|           8|
+    |select_ln394_3_fu_470_p3   |    select|   0|  0|   8|           1|           8|
+    |select_ln394_4_fu_604_p3   |    select|   0|  0|   8|           1|           8|
+    |select_ln394_5_fu_738_p3   |    select|   0|  0|   8|           1|           8|
+    |select_ln394_fu_202_p3     |    select|   0|  0|   8|           1|           8|
+    |select_ln403_2_fu_328_p3   |    select|   0|  0|   2|           1|           1|
+    |select_ln403_3_fu_462_p3   |    select|   0|  0|   2|           1|           1|
+    |select_ln403_4_fu_596_p3   |    select|   0|  0|   2|           1|           1|
+    |select_ln403_5_fu_730_p3   |    select|   0|  0|   2|           1|           1|
+    |select_ln403_fu_194_p3     |    select|   0|  0|   2|           1|           1|
+    |select_ln787_1_fu_320_p3   |    select|   0|  0|   2|           1|           1|
+    |select_ln787_2_fu_454_p3   |    select|   0|  0|   2|           1|           1|
+    |select_ln787_3_fu_588_p3   |    select|   0|  0|   2|           1|           1|
+    |select_ln787_4_fu_722_p3   |    select|   0|  0|   2|           1|           1|
+    |select_ln787_fu_186_p3     |    select|   0|  0|   2|           1|           1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0| 215|         205|         165|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+------------------------------------------------------------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |                              Source Object                             |    C Type    |
++-------------+-----+-----+------------+------------------------------------------------------------------------+--------------+
+|ap_ready     |  out|    1|  ap_ctrl_hs|  relu<ap_fixed<16, 4, 5, 3, 0>, ap_ufixed<8, 0, 4, 0, 0>, relu_config4>|  return value|
+|ap_return_0  |  out|    8|  ap_ctrl_hs|  relu<ap_fixed<16, 4, 5, 3, 0>, ap_ufixed<8, 0, 4, 0, 0>, relu_config4>|  return value|
+|ap_return_1  |  out|    8|  ap_ctrl_hs|  relu<ap_fixed<16, 4, 5, 3, 0>, ap_ufixed<8, 0, 4, 0, 0>, relu_config4>|  return value|
+|ap_return_2  |  out|    8|  ap_ctrl_hs|  relu<ap_fixed<16, 4, 5, 3, 0>, ap_ufixed<8, 0, 4, 0, 0>, relu_config4>|  return value|
+|ap_return_3  |  out|    8|  ap_ctrl_hs|  relu<ap_fixed<16, 4, 5, 3, 0>, ap_ufixed<8, 0, 4, 0, 0>, relu_config4>|  return value|
+|ap_return_4  |  out|    8|  ap_ctrl_hs|  relu<ap_fixed<16, 4, 5, 3, 0>, ap_ufixed<8, 0, 4, 0, 0>, relu_config4>|  return value|
+|p_read       |   in|   16|     ap_none|                                                                  p_read|        scalar|
+|p_read1      |   in|   16|     ap_none|                                                                 p_read1|        scalar|
+|p_read2      |   in|   16|     ap_none|                                                                 p_read2|        scalar|
+|p_read3      |   in|   16|     ap_none|                                                                 p_read3|        scalar|
+|p_read4      |   in|   16|     ap_none|                                                                 p_read4|        scalar|
++-------------+-----+-----+------------+------------------------------------------------------------------------+--------------+
+

@@ -1,0 +1,148 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config10_s'" level="0">
+<item name = "Date">Wed Jul 19 12:53:40 2023
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z007s-clg225-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 7.947 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">6, 6, 47.684 ns, 47.684 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 129, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 0, 0, 732, -</column>
+<column name="Memory">2, -, 0, 0, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, 242, 64, -</column>
+<specialColumn name="Available">100, 66, 28800, 14400, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, 0, ~0, 6, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mul_18s_18s_28_1_1_U26">mul_18s_18s_28_1_1, 0, 0, 0, 366, 0</column>
+<column name="mul_18s_18s_28_1_1_U27">mul_18s_18s_28_1_1, 0, 0, 0, 366, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="exp_table_U">softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config10_s_exp_table, 1, 0, 0, 0, 1024, 18, 1, 18432</column>
+<column name="invert_table_U">softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config10_s_invert_table, 1, 0, 0, 0, 1024, 18, 1, 18432</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="exp_sum_V_fu_267_p2">+, 0, 0, 18, 18, 18</column>
+<column name="ret_V_1_fu_167_p2">-, 0, 0, 17, 17, 17</column>
+<column name="ret_V_fu_124_p2">-, 0, 0, 17, 17, 17</column>
+<column name="overflow_1_fu_195_p2">and, 0, 0, 1, 1, 1</column>
+<column name="overflow_fu_152_p2">and, 0, 0, 1, 1, 1</column>
+<column name="icmp_ln1549_fu_100_p2">icmp, 0, 0, 7, 16, 16</column>
+<column name="select_ln384_1_fu_233_p3">select, 0, 0, 11, 1, 9</column>
+<column name="select_ln384_fu_207_p3">select, 0, 0, 11, 1, 9</column>
+<column name="x_max_V_fu_111_p3">select, 0, 0, 16, 1, 16</column>
+<column name="y_1_fu_251_p3">select, 0, 0, 10, 1, 10</column>
+<column name="y_fu_225_p3">select, 0, 0, 10, 1, 10</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln1549_fu_106_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln340_1_fu_201_p2">xor, 0, 0, 1, 1, 1</column>
+<column name="xor_ln340_fu_158_p2">xor, 0, 0, 1, 1, 1</column>
+<column name="xor_ln794_1_fu_189_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln794_fu_146_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter6">1, 0, 1, 0</column>
+<column name="icmp_ln1549_reg_351">1, 0, 1, 0</column>
+<column name="inv_exp_sum_V_reg_393">18, 0, 18, 0</column>
+<column name="p_read_1_reg_339">16, 0, 16, 0</column>
+<column name="p_read_2_reg_345">16, 0, 16, 0</column>
+<column name="r_V_1_reg_382">18, 0, 18, 0</column>
+<column name="r_V_reg_376">18, 0, 18, 0</column>
+<column name="y_1_reg_361">10, 0, 10, 0</column>
+<column name="y_reg_356">10, 0, 10, 0</column>
+<column name="r_V_1_reg_382">64, 32, 18, 0</column>
+<column name="r_V_reg_376">64, 32, 18, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, softmax_stable&lt;ap_fixed,ap_fixed&lt;16,4,5,3,0&gt;,softmax_config10&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, softmax_stable&lt;ap_fixed,ap_fixed&lt;16,4,5,3,0&gt;,softmax_config10&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, softmax_stable&lt;ap_fixed,ap_fixed&lt;16,4,5,3,0&gt;,softmax_config10&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, softmax_stable&lt;ap_fixed,ap_fixed&lt;16,4,5,3,0&gt;,softmax_config10&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, softmax_stable&lt;ap_fixed,ap_fixed&lt;16,4,5,3,0&gt;,softmax_config10&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, softmax_stable&lt;ap_fixed,ap_fixed&lt;16,4,5,3,0&gt;,softmax_config10&gt;, return value</column>
+<column name="ap_return_0">out, 16, ap_ctrl_hs, softmax_stable&lt;ap_fixed,ap_fixed&lt;16,4,5,3,0&gt;,softmax_config10&gt;, return value</column>
+<column name="ap_return_1">out, 16, ap_ctrl_hs, softmax_stable&lt;ap_fixed,ap_fixed&lt;16,4,5,3,0&gt;,softmax_config10&gt;, return value</column>
+<column name="p_read">in, 16, ap_none, p_read, scalar</column>
+<column name="p_read1">in, 16, ap_none, p_read1, scalar</column>
+</table>
+</item>
+</section>
+</profile>

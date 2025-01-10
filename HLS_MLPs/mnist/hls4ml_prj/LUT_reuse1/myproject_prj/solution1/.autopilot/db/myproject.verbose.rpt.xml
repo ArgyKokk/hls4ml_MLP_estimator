@@ -1,0 +1,543 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'myproject'" level="0">
+<item name = "Date">Thu Jul 20 10:49:58 2023
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z007s-clg225-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 7.947 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">87, 87, 0.691 us, 0.691 us, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_dense_latency_ap_fixed_8_2_5_3_0_ap_fixed_16_4_5_3_0_config2_s_fu_140">dense_latency_ap_fixed_8_2_5_3_0_ap_fixed_16_4_5_3_0_config2_s, 48, 48, 0.381 us, 0.381 us, 1, 1, yes</column>
+<column name="call_ret1_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config4_s_fu_146">relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config4_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="grp_dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config5_s_fu_206">dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config5_s, 5, 5, 39.737 ns, 39.737 ns, 1, 1, yes</column>
+<column name="call_ret3_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config7_s_fu_266">relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config7_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="grp_dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config8_s_fu_334">dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config8_s, 6, 6, 47.684 ns, 47.684 ns, 1, 1, yes</column>
+<column name="call_ret5_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config10_s_fu_402">relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config10_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="grp_dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config11_s_fu_436">dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config11_s, 5, 5, 39.737 ns, 39.737 ns, 1, 1, yes</column>
+<column name="grp_softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config13_s_fu_470">softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config13_s, 12, 12, 95.368 ns, 95.368 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 2, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">10, 0, 214682, 274042, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, 3849, -, -</column>
+<specialColumn name="Available">100, 66, 28800, 14400, 0</specialColumn>
+<specialColumn name="Utilization (%)">10, 0, 758, 1903, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_dense_latency_ap_fixed_8_2_5_3_0_ap_fixed_16_4_5_3_0_config2_s_fu_140">dense_latency_ap_fixed_8_2_5_3_0_ap_fixed_16_4_5_3_0_config2_s, 0, 0, 138417, 138404, 0</column>
+<column name="grp_dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config11_s_fu_436">dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config11_s, 0, 0, 6369, 14178, 0</column>
+<column name="grp_dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config5_s_fu_206">dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config5_s, 0, 0, 41219, 65605, 0</column>
+<column name="grp_dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config8_s_fu_334">dense_latency_ap_ufixed_8_1_4_0_0_ap_fixed_16_4_5_3_0_config8_s, 0, 0, 26597, 44232, 0</column>
+<column name="call_ret5_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config10_s_fu_402">relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config10_s, 0, 0, 0, 1290, 0</column>
+<column name="call_ret1_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config4_s_fu_146">relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config4_s, 0, 0, 0, 2408, 0</column>
+<column name="call_ret3_relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config7_s_fu_266">relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_1_4_0_0_relu_config7_s, 0, 0, 0, 2752, 0</column>
+<column name="grp_softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config13_s_fu_470">softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config13_s, 10, 0, 2080, 5173, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter10">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter11">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter12">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter13">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter14">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter15">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter16">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter17">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter18">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter19">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter20">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter21">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter22">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter23">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter24">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter25">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter26">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter27">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter28">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter29">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter30">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter31">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter32">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter33">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter34">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter35">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter36">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter37">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter38">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter39">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter40">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter41">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter42">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter43">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter44">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter45">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter46">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter47">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter48">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter49">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter50">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter51">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter52">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter53">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter54">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter55">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter56">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter57">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter58">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter59">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter6">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter60">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter61">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter62">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter63">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter64">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter65">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter66">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter67">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter68">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter69">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter7">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter70">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter71">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter72">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter73">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter74">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter75">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter76">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter77">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter78">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter79">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter8">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter80">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter81">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter82">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter83">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter84">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter85">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter86">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter87">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter9">1, 0, 1, 0</column>
+<column name="grp_softmax_stable_ap_fixed_ap_fixed_16_4_5_3_0_softmax_config13_s_fu_470_ap_start_reg">1, 0, 1, 0</column>
+<column name="layer10_out_V_0_reg_3133">8, 0, 8, 0</column>
+<column name="layer10_out_V_10_reg_3178">8, 0, 8, 0</column>
+<column name="layer10_out_V_11_reg_3183">8, 0, 8, 0</column>
+<column name="layer10_out_V_12_reg_3188">8, 0, 8, 0</column>
+<column name="layer10_out_V_13_reg_3193">8, 0, 8, 0</column>
+<column name="layer10_out_V_14_reg_3198">8, 0, 8, 0</column>
+<column name="layer10_out_V_16_reg_3203">8, 0, 8, 0</column>
+<column name="layer10_out_V_17_reg_3208">8, 0, 8, 0</column>
+<column name="layer10_out_V_18_reg_3213">8, 0, 8, 0</column>
+<column name="layer10_out_V_19_reg_3218">8, 0, 8, 0</column>
+<column name="layer10_out_V_1_reg_3138">8, 0, 8, 0</column>
+<column name="layer10_out_V_20_reg_3223">8, 0, 8, 0</column>
+<column name="layer10_out_V_21_reg_3228">8, 0, 8, 0</column>
+<column name="layer10_out_V_22_reg_3233">8, 0, 8, 0</column>
+<column name="layer10_out_V_23_reg_3238">8, 0, 8, 0</column>
+<column name="layer10_out_V_24_reg_3243">8, 0, 8, 0</column>
+<column name="layer10_out_V_25_reg_3248">8, 0, 8, 0</column>
+<column name="layer10_out_V_26_reg_3253">8, 0, 8, 0</column>
+<column name="layer10_out_V_27_reg_3258">8, 0, 8, 0</column>
+<column name="layer10_out_V_28_reg_3263">8, 0, 8, 0</column>
+<column name="layer10_out_V_29_reg_3268">8, 0, 8, 0</column>
+<column name="layer10_out_V_2_reg_3143">8, 0, 8, 0</column>
+<column name="layer10_out_V_30_reg_3273">8, 0, 8, 0</column>
+<column name="layer10_out_V_31_reg_3278">8, 0, 8, 0</column>
+<column name="layer10_out_V_3_reg_3148">8, 0, 8, 0</column>
+<column name="layer10_out_V_4_reg_3153">8, 0, 8, 0</column>
+<column name="layer10_out_V_5_reg_3158">8, 0, 8, 0</column>
+<column name="layer10_out_V_6_reg_3163">8, 0, 8, 0</column>
+<column name="layer10_out_V_7_reg_3168">8, 0, 8, 0</column>
+<column name="layer10_out_V_8_reg_3173">8, 0, 8, 0</column>
+<column name="layer11_out_V_0_reg_3283">16, 0, 16, 0</column>
+<column name="layer11_out_V_1_reg_3288">16, 0, 16, 0</column>
+<column name="layer11_out_V_2_reg_3293">16, 0, 16, 0</column>
+<column name="layer11_out_V_3_reg_3298">16, 0, 16, 0</column>
+<column name="layer11_out_V_4_reg_3303">16, 0, 16, 0</column>
+<column name="layer11_out_V_5_reg_3308">16, 0, 16, 0</column>
+<column name="layer11_out_V_6_reg_3313">16, 0, 16, 0</column>
+<column name="layer11_out_V_7_reg_3318">16, 0, 16, 0</column>
+<column name="layer11_out_V_8_reg_3323">16, 0, 16, 0</column>
+<column name="layer11_out_V_9_reg_3328">16, 0, 16, 0</column>
+<column name="layer2_out_V_0_reg_1783">16, 0, 16, 0</column>
+<column name="layer2_out_V_10_reg_1833">16, 0, 16, 0</column>
+<column name="layer2_out_V_11_reg_1838">16, 0, 16, 0</column>
+<column name="layer2_out_V_12_reg_1843">16, 0, 16, 0</column>
+<column name="layer2_out_V_13_reg_1848">16, 0, 16, 0</column>
+<column name="layer2_out_V_14_reg_1853">16, 0, 16, 0</column>
+<column name="layer2_out_V_15_reg_1858">16, 0, 16, 0</column>
+<column name="layer2_out_V_16_reg_1863">16, 0, 16, 0</column>
+<column name="layer2_out_V_17_reg_1868">16, 0, 16, 0</column>
+<column name="layer2_out_V_18_reg_1873">16, 0, 16, 0</column>
+<column name="layer2_out_V_19_reg_1878">16, 0, 16, 0</column>
+<column name="layer2_out_V_1_reg_1788">16, 0, 16, 0</column>
+<column name="layer2_out_V_20_reg_1883">16, 0, 16, 0</column>
+<column name="layer2_out_V_21_reg_1888">16, 0, 16, 0</column>
+<column name="layer2_out_V_22_reg_1893">16, 0, 16, 0</column>
+<column name="layer2_out_V_23_reg_1898">16, 0, 16, 0</column>
+<column name="layer2_out_V_24_reg_1903">16, 0, 16, 0</column>
+<column name="layer2_out_V_25_reg_1908">16, 0, 16, 0</column>
+<column name="layer2_out_V_26_reg_1913">16, 0, 16, 0</column>
+<column name="layer2_out_V_27_reg_1918">16, 0, 16, 0</column>
+<column name="layer2_out_V_28_reg_1923">16, 0, 16, 0</column>
+<column name="layer2_out_V_29_reg_1928">16, 0, 16, 0</column>
+<column name="layer2_out_V_2_reg_1793">16, 0, 16, 0</column>
+<column name="layer2_out_V_30_reg_1933">16, 0, 16, 0</column>
+<column name="layer2_out_V_31_reg_1938">16, 0, 16, 0</column>
+<column name="layer2_out_V_32_reg_1943">16, 0, 16, 0</column>
+<column name="layer2_out_V_33_reg_1948">16, 0, 16, 0</column>
+<column name="layer2_out_V_34_reg_1953">16, 0, 16, 0</column>
+<column name="layer2_out_V_35_reg_1958">16, 0, 16, 0</column>
+<column name="layer2_out_V_36_reg_1963">16, 0, 16, 0</column>
+<column name="layer2_out_V_37_reg_1968">16, 0, 16, 0</column>
+<column name="layer2_out_V_38_reg_1973">16, 0, 16, 0</column>
+<column name="layer2_out_V_39_reg_1978">16, 0, 16, 0</column>
+<column name="layer2_out_V_3_reg_1798">16, 0, 16, 0</column>
+<column name="layer2_out_V_40_reg_1983">16, 0, 16, 0</column>
+<column name="layer2_out_V_41_reg_1988">16, 0, 16, 0</column>
+<column name="layer2_out_V_42_reg_1993">16, 0, 16, 0</column>
+<column name="layer2_out_V_43_reg_1998">16, 0, 16, 0</column>
+<column name="layer2_out_V_44_reg_2003">16, 0, 16, 0</column>
+<column name="layer2_out_V_45_reg_2008">16, 0, 16, 0</column>
+<column name="layer2_out_V_46_reg_2013">16, 0, 16, 0</column>
+<column name="layer2_out_V_47_reg_2018">16, 0, 16, 0</column>
+<column name="layer2_out_V_48_reg_2023">16, 0, 16, 0</column>
+<column name="layer2_out_V_49_reg_2028">16, 0, 16, 0</column>
+<column name="layer2_out_V_4_reg_1803">16, 0, 16, 0</column>
+<column name="layer2_out_V_50_reg_2033">16, 0, 16, 0</column>
+<column name="layer2_out_V_51_reg_2038">16, 0, 16, 0</column>
+<column name="layer2_out_V_52_reg_2043">16, 0, 16, 0</column>
+<column name="layer2_out_V_53_reg_2048">16, 0, 16, 0</column>
+<column name="layer2_out_V_54_reg_2053">16, 0, 16, 0</column>
+<column name="layer2_out_V_55_reg_2058">16, 0, 16, 0</column>
+<column name="layer2_out_V_5_reg_1808">16, 0, 16, 0</column>
+<column name="layer2_out_V_6_reg_1813">16, 0, 16, 0</column>
+<column name="layer2_out_V_7_reg_1818">16, 0, 16, 0</column>
+<column name="layer2_out_V_8_reg_1823">16, 0, 16, 0</column>
+<column name="layer2_out_V_9_reg_1828">16, 0, 16, 0</column>
+<column name="layer4_out_V_0_reg_2063">8, 0, 8, 0</column>
+<column name="layer4_out_V_10_reg_2113">8, 0, 8, 0</column>
+<column name="layer4_out_V_11_reg_2118">8, 0, 8, 0</column>
+<column name="layer4_out_V_12_reg_2123">8, 0, 8, 0</column>
+<column name="layer4_out_V_13_reg_2128">8, 0, 8, 0</column>
+<column name="layer4_out_V_14_reg_2133">8, 0, 8, 0</column>
+<column name="layer4_out_V_15_reg_2138">8, 0, 8, 0</column>
+<column name="layer4_out_V_16_reg_2143">8, 0, 8, 0</column>
+<column name="layer4_out_V_17_reg_2148">8, 0, 8, 0</column>
+<column name="layer4_out_V_18_reg_2153">8, 0, 8, 0</column>
+<column name="layer4_out_V_19_reg_2158">8, 0, 8, 0</column>
+<column name="layer4_out_V_1_reg_2068">8, 0, 8, 0</column>
+<column name="layer4_out_V_20_reg_2163">8, 0, 8, 0</column>
+<column name="layer4_out_V_21_reg_2168">8, 0, 8, 0</column>
+<column name="layer4_out_V_22_reg_2173">8, 0, 8, 0</column>
+<column name="layer4_out_V_23_reg_2178">8, 0, 8, 0</column>
+<column name="layer4_out_V_24_reg_2183">8, 0, 8, 0</column>
+<column name="layer4_out_V_25_reg_2188">8, 0, 8, 0</column>
+<column name="layer4_out_V_26_reg_2193">8, 0, 8, 0</column>
+<column name="layer4_out_V_27_reg_2198">8, 0, 8, 0</column>
+<column name="layer4_out_V_28_reg_2203">8, 0, 8, 0</column>
+<column name="layer4_out_V_29_reg_2208">8, 0, 8, 0</column>
+<column name="layer4_out_V_2_reg_2073">8, 0, 8, 0</column>
+<column name="layer4_out_V_30_reg_2213">8, 0, 8, 0</column>
+<column name="layer4_out_V_31_reg_2218">8, 0, 8, 0</column>
+<column name="layer4_out_V_32_reg_2223">8, 0, 8, 0</column>
+<column name="layer4_out_V_33_reg_2228">8, 0, 8, 0</column>
+<column name="layer4_out_V_34_reg_2233">8, 0, 8, 0</column>
+<column name="layer4_out_V_35_reg_2238">8, 0, 8, 0</column>
+<column name="layer4_out_V_36_reg_2243">8, 0, 8, 0</column>
+<column name="layer4_out_V_37_reg_2248">8, 0, 8, 0</column>
+<column name="layer4_out_V_38_reg_2253">8, 0, 8, 0</column>
+<column name="layer4_out_V_39_reg_2258">8, 0, 8, 0</column>
+<column name="layer4_out_V_3_reg_2078">8, 0, 8, 0</column>
+<column name="layer4_out_V_40_reg_2263">8, 0, 8, 0</column>
+<column name="layer4_out_V_41_reg_2268">8, 0, 8, 0</column>
+<column name="layer4_out_V_42_reg_2273">8, 0, 8, 0</column>
+<column name="layer4_out_V_43_reg_2278">8, 0, 8, 0</column>
+<column name="layer4_out_V_44_reg_2283">8, 0, 8, 0</column>
+<column name="layer4_out_V_45_reg_2288">8, 0, 8, 0</column>
+<column name="layer4_out_V_46_reg_2293">8, 0, 8, 0</column>
+<column name="layer4_out_V_47_reg_2298">8, 0, 8, 0</column>
+<column name="layer4_out_V_48_reg_2303">8, 0, 8, 0</column>
+<column name="layer4_out_V_49_reg_2308">8, 0, 8, 0</column>
+<column name="layer4_out_V_4_reg_2083">8, 0, 8, 0</column>
+<column name="layer4_out_V_50_reg_2313">8, 0, 8, 0</column>
+<column name="layer4_out_V_51_reg_2318">8, 0, 8, 0</column>
+<column name="layer4_out_V_52_reg_2323">8, 0, 8, 0</column>
+<column name="layer4_out_V_53_reg_2328">8, 0, 8, 0</column>
+<column name="layer4_out_V_54_reg_2333">8, 0, 8, 0</column>
+<column name="layer4_out_V_55_reg_2338">8, 0, 8, 0</column>
+<column name="layer4_out_V_5_reg_2088">8, 0, 8, 0</column>
+<column name="layer4_out_V_6_reg_2093">8, 0, 8, 0</column>
+<column name="layer4_out_V_7_reg_2098">8, 0, 8, 0</column>
+<column name="layer4_out_V_8_reg_2103">8, 0, 8, 0</column>
+<column name="layer4_out_V_9_reg_2108">8, 0, 8, 0</column>
+<column name="layer5_out_V_0_reg_2343">16, 0, 16, 0</column>
+<column name="layer5_out_V_10_reg_2393">16, 0, 16, 0</column>
+<column name="layer5_out_V_11_reg_2398">16, 0, 16, 0</column>
+<column name="layer5_out_V_12_reg_2403">16, 0, 16, 0</column>
+<column name="layer5_out_V_13_reg_2408">16, 0, 16, 0</column>
+<column name="layer5_out_V_14_reg_2413">16, 0, 16, 0</column>
+<column name="layer5_out_V_15_reg_2418">16, 0, 16, 0</column>
+<column name="layer5_out_V_16_reg_2423">16, 0, 16, 0</column>
+<column name="layer5_out_V_17_reg_2428">16, 0, 16, 0</column>
+<column name="layer5_out_V_18_reg_2433">16, 0, 16, 0</column>
+<column name="layer5_out_V_19_reg_2438">16, 0, 16, 0</column>
+<column name="layer5_out_V_1_reg_2348">16, 0, 16, 0</column>
+<column name="layer5_out_V_20_reg_2443">16, 0, 16, 0</column>
+<column name="layer5_out_V_21_reg_2448">16, 0, 16, 0</column>
+<column name="layer5_out_V_22_reg_2453">16, 0, 16, 0</column>
+<column name="layer5_out_V_23_reg_2458">16, 0, 16, 0</column>
+<column name="layer5_out_V_24_reg_2463">16, 0, 16, 0</column>
+<column name="layer5_out_V_25_reg_2468">16, 0, 16, 0</column>
+<column name="layer5_out_V_26_reg_2473">16, 0, 16, 0</column>
+<column name="layer5_out_V_27_reg_2478">16, 0, 16, 0</column>
+<column name="layer5_out_V_28_reg_2483">16, 0, 16, 0</column>
+<column name="layer5_out_V_29_reg_2488">16, 0, 16, 0</column>
+<column name="layer5_out_V_2_reg_2353">16, 0, 16, 0</column>
+<column name="layer5_out_V_30_reg_2493">16, 0, 16, 0</column>
+<column name="layer5_out_V_31_reg_2498">16, 0, 16, 0</column>
+<column name="layer5_out_V_32_reg_2503">16, 0, 16, 0</column>
+<column name="layer5_out_V_33_reg_2508">16, 0, 16, 0</column>
+<column name="layer5_out_V_34_reg_2513">16, 0, 16, 0</column>
+<column name="layer5_out_V_35_reg_2518">16, 0, 16, 0</column>
+<column name="layer5_out_V_36_reg_2523">16, 0, 16, 0</column>
+<column name="layer5_out_V_37_reg_2528">16, 0, 16, 0</column>
+<column name="layer5_out_V_38_reg_2533">16, 0, 16, 0</column>
+<column name="layer5_out_V_39_reg_2538">16, 0, 16, 0</column>
+<column name="layer5_out_V_3_reg_2358">16, 0, 16, 0</column>
+<column name="layer5_out_V_40_reg_2543">16, 0, 16, 0</column>
+<column name="layer5_out_V_41_reg_2548">16, 0, 16, 0</column>
+<column name="layer5_out_V_42_reg_2553">16, 0, 16, 0</column>
+<column name="layer5_out_V_43_reg_2558">16, 0, 16, 0</column>
+<column name="layer5_out_V_44_reg_2563">16, 0, 16, 0</column>
+<column name="layer5_out_V_45_reg_2568">16, 0, 16, 0</column>
+<column name="layer5_out_V_46_reg_2573">16, 0, 16, 0</column>
+<column name="layer5_out_V_47_reg_2578">16, 0, 16, 0</column>
+<column name="layer5_out_V_48_reg_2583">16, 0, 16, 0</column>
+<column name="layer5_out_V_49_reg_2588">16, 0, 16, 0</column>
+<column name="layer5_out_V_4_reg_2363">16, 0, 16, 0</column>
+<column name="layer5_out_V_50_reg_2593">16, 0, 16, 0</column>
+<column name="layer5_out_V_51_reg_2598">16, 0, 16, 0</column>
+<column name="layer5_out_V_52_reg_2603">16, 0, 16, 0</column>
+<column name="layer5_out_V_53_reg_2608">16, 0, 16, 0</column>
+<column name="layer5_out_V_54_reg_2613">16, 0, 16, 0</column>
+<column name="layer5_out_V_55_reg_2618">16, 0, 16, 0</column>
+<column name="layer5_out_V_56_reg_2623">16, 0, 16, 0</column>
+<column name="layer5_out_V_57_reg_2628">16, 0, 16, 0</column>
+<column name="layer5_out_V_58_reg_2633">16, 0, 16, 0</column>
+<column name="layer5_out_V_59_reg_2638">16, 0, 16, 0</column>
+<column name="layer5_out_V_5_reg_2368">16, 0, 16, 0</column>
+<column name="layer5_out_V_60_reg_2643">16, 0, 16, 0</column>
+<column name="layer5_out_V_61_reg_2648">16, 0, 16, 0</column>
+<column name="layer5_out_V_62_reg_2653">16, 0, 16, 0</column>
+<column name="layer5_out_V_63_reg_2658">16, 0, 16, 0</column>
+<column name="layer5_out_V_6_reg_2373">16, 0, 16, 0</column>
+<column name="layer5_out_V_7_reg_2378">16, 0, 16, 0</column>
+<column name="layer5_out_V_8_reg_2383">16, 0, 16, 0</column>
+<column name="layer5_out_V_9_reg_2388">16, 0, 16, 0</column>
+<column name="layer7_out_V_0_reg_2663">8, 0, 8, 0</column>
+<column name="layer7_out_V_10_reg_2713">8, 0, 8, 0</column>
+<column name="layer7_out_V_11_reg_2718">8, 0, 8, 0</column>
+<column name="layer7_out_V_12_reg_2723">8, 0, 8, 0</column>
+<column name="layer7_out_V_13_reg_2728">8, 0, 8, 0</column>
+<column name="layer7_out_V_14_reg_2733">8, 0, 8, 0</column>
+<column name="layer7_out_V_15_reg_2738">8, 0, 8, 0</column>
+<column name="layer7_out_V_16_reg_2743">8, 0, 8, 0</column>
+<column name="layer7_out_V_17_reg_2748">8, 0, 8, 0</column>
+<column name="layer7_out_V_18_reg_2753">8, 0, 8, 0</column>
+<column name="layer7_out_V_19_reg_2758">8, 0, 8, 0</column>
+<column name="layer7_out_V_1_reg_2668">8, 0, 8, 0</column>
+<column name="layer7_out_V_20_reg_2763">8, 0, 8, 0</column>
+<column name="layer7_out_V_21_reg_2768">8, 0, 8, 0</column>
+<column name="layer7_out_V_22_reg_2773">8, 0, 8, 0</column>
+<column name="layer7_out_V_23_reg_2778">8, 0, 8, 0</column>
+<column name="layer7_out_V_24_reg_2783">8, 0, 8, 0</column>
+<column name="layer7_out_V_25_reg_2788">8, 0, 8, 0</column>
+<column name="layer7_out_V_26_reg_2793">8, 0, 8, 0</column>
+<column name="layer7_out_V_27_reg_2798">8, 0, 8, 0</column>
+<column name="layer7_out_V_28_reg_2803">8, 0, 8, 0</column>
+<column name="layer7_out_V_29_reg_2808">8, 0, 8, 0</column>
+<column name="layer7_out_V_2_reg_2673">8, 0, 8, 0</column>
+<column name="layer7_out_V_30_reg_2813">8, 0, 8, 0</column>
+<column name="layer7_out_V_31_reg_2818">8, 0, 8, 0</column>
+<column name="layer7_out_V_32_reg_2823">8, 0, 8, 0</column>
+<column name="layer7_out_V_33_reg_2828">8, 0, 8, 0</column>
+<column name="layer7_out_V_34_reg_2833">8, 0, 8, 0</column>
+<column name="layer7_out_V_35_reg_2838">8, 0, 8, 0</column>
+<column name="layer7_out_V_36_reg_2843">8, 0, 8, 0</column>
+<column name="layer7_out_V_37_reg_2848">8, 0, 8, 0</column>
+<column name="layer7_out_V_38_reg_2853">8, 0, 8, 0</column>
+<column name="layer7_out_V_39_reg_2858">8, 0, 8, 0</column>
+<column name="layer7_out_V_3_reg_2678">8, 0, 8, 0</column>
+<column name="layer7_out_V_40_reg_2863">8, 0, 8, 0</column>
+<column name="layer7_out_V_41_reg_2868">8, 0, 8, 0</column>
+<column name="layer7_out_V_42_reg_2873">8, 0, 8, 0</column>
+<column name="layer7_out_V_43_reg_2878">8, 0, 8, 0</column>
+<column name="layer7_out_V_44_reg_2883">8, 0, 8, 0</column>
+<column name="layer7_out_V_45_reg_2888">8, 0, 8, 0</column>
+<column name="layer7_out_V_46_reg_2893">8, 0, 8, 0</column>
+<column name="layer7_out_V_47_reg_2898">8, 0, 8, 0</column>
+<column name="layer7_out_V_48_reg_2903">8, 0, 8, 0</column>
+<column name="layer7_out_V_49_reg_2908">8, 0, 8, 0</column>
+<column name="layer7_out_V_4_reg_2683">8, 0, 8, 0</column>
+<column name="layer7_out_V_50_reg_2913">8, 0, 8, 0</column>
+<column name="layer7_out_V_51_reg_2918">8, 0, 8, 0</column>
+<column name="layer7_out_V_52_reg_2923">8, 0, 8, 0</column>
+<column name="layer7_out_V_53_reg_2928">8, 0, 8, 0</column>
+<column name="layer7_out_V_54_reg_2933">8, 0, 8, 0</column>
+<column name="layer7_out_V_55_reg_2938">8, 0, 8, 0</column>
+<column name="layer7_out_V_56_reg_2943">8, 0, 8, 0</column>
+<column name="layer7_out_V_57_reg_2948">8, 0, 8, 0</column>
+<column name="layer7_out_V_58_reg_2953">8, 0, 8, 0</column>
+<column name="layer7_out_V_59_reg_2958">8, 0, 8, 0</column>
+<column name="layer7_out_V_5_reg_2688">8, 0, 8, 0</column>
+<column name="layer7_out_V_60_reg_2963">8, 0, 8, 0</column>
+<column name="layer7_out_V_61_reg_2968">8, 0, 8, 0</column>
+<column name="layer7_out_V_62_reg_2973">8, 0, 8, 0</column>
+<column name="layer7_out_V_63_reg_2978">8, 0, 8, 0</column>
+<column name="layer7_out_V_6_reg_2693">8, 0, 8, 0</column>
+<column name="layer7_out_V_7_reg_2698">8, 0, 8, 0</column>
+<column name="layer7_out_V_8_reg_2703">8, 0, 8, 0</column>
+<column name="layer7_out_V_9_reg_2708">8, 0, 8, 0</column>
+<column name="layer8_out_V_0_reg_2983">16, 0, 16, 0</column>
+<column name="layer8_out_V_10_reg_3028">16, 0, 16, 0</column>
+<column name="layer8_out_V_11_reg_3033">16, 0, 16, 0</column>
+<column name="layer8_out_V_12_reg_3038">16, 0, 16, 0</column>
+<column name="layer8_out_V_13_reg_3043">16, 0, 16, 0</column>
+<column name="layer8_out_V_14_reg_3048">16, 0, 16, 0</column>
+<column name="layer8_out_V_16_reg_3053">16, 0, 16, 0</column>
+<column name="layer8_out_V_17_reg_3058">16, 0, 16, 0</column>
+<column name="layer8_out_V_18_reg_3063">16, 0, 16, 0</column>
+<column name="layer8_out_V_19_reg_3068">16, 0, 16, 0</column>
+<column name="layer8_out_V_1_reg_2988">16, 0, 16, 0</column>
+<column name="layer8_out_V_20_reg_3073">16, 0, 16, 0</column>
+<column name="layer8_out_V_21_reg_3078">16, 0, 16, 0</column>
+<column name="layer8_out_V_22_reg_3083">16, 0, 16, 0</column>
+<column name="layer8_out_V_23_reg_3088">16, 0, 16, 0</column>
+<column name="layer8_out_V_24_reg_3093">16, 0, 16, 0</column>
+<column name="layer8_out_V_25_reg_3098">16, 0, 16, 0</column>
+<column name="layer8_out_V_26_reg_3103">16, 0, 16, 0</column>
+<column name="layer8_out_V_27_reg_3108">16, 0, 16, 0</column>
+<column name="layer8_out_V_28_reg_3113">16, 0, 16, 0</column>
+<column name="layer8_out_V_29_reg_3118">16, 0, 16, 0</column>
+<column name="layer8_out_V_2_reg_2993">16, 0, 16, 0</column>
+<column name="layer8_out_V_30_reg_3123">16, 0, 16, 0</column>
+<column name="layer8_out_V_31_reg_3128">16, 0, 16, 0</column>
+<column name="layer8_out_V_3_reg_2998">16, 0, 16, 0</column>
+<column name="layer8_out_V_4_reg_3003">16, 0, 16, 0</column>
+<column name="layer8_out_V_5_reg_3008">16, 0, 16, 0</column>
+<column name="layer8_out_V_6_reg_3013">16, 0, 16, 0</column>
+<column name="layer8_out_V_7_reg_3018">16, 0, 16, 0</column>
+<column name="layer8_out_V_8_reg_3023">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="fc1_input">in, 1568, ap_none, fc1_input, pointer</column>
+<column name="layer13_out_0">out, 16, ap_vld, layer13_out_0, pointer</column>
+<column name="layer13_out_0_ap_vld">out, 1, ap_vld, layer13_out_0, pointer</column>
+<column name="layer13_out_1">out, 16, ap_vld, layer13_out_1, pointer</column>
+<column name="layer13_out_1_ap_vld">out, 1, ap_vld, layer13_out_1, pointer</column>
+<column name="layer13_out_2">out, 16, ap_vld, layer13_out_2, pointer</column>
+<column name="layer13_out_2_ap_vld">out, 1, ap_vld, layer13_out_2, pointer</column>
+<column name="layer13_out_3">out, 16, ap_vld, layer13_out_3, pointer</column>
+<column name="layer13_out_3_ap_vld">out, 1, ap_vld, layer13_out_3, pointer</column>
+<column name="layer13_out_4">out, 16, ap_vld, layer13_out_4, pointer</column>
+<column name="layer13_out_4_ap_vld">out, 1, ap_vld, layer13_out_4, pointer</column>
+<column name="layer13_out_5">out, 16, ap_vld, layer13_out_5, pointer</column>
+<column name="layer13_out_5_ap_vld">out, 1, ap_vld, layer13_out_5, pointer</column>
+<column name="layer13_out_6">out, 16, ap_vld, layer13_out_6, pointer</column>
+<column name="layer13_out_6_ap_vld">out, 1, ap_vld, layer13_out_6, pointer</column>
+<column name="layer13_out_7">out, 16, ap_vld, layer13_out_7, pointer</column>
+<column name="layer13_out_7_ap_vld">out, 1, ap_vld, layer13_out_7, pointer</column>
+<column name="layer13_out_8">out, 16, ap_vld, layer13_out_8, pointer</column>
+<column name="layer13_out_8_ap_vld">out, 1, ap_vld, layer13_out_8, pointer</column>
+<column name="layer13_out_9">out, 16, ap_vld, layer13_out_9, pointer</column>
+<column name="layer13_out_9_ap_vld">out, 1, ap_vld, layer13_out_9, pointer</column>
+</table>
+</item>
+</section>
+</profile>

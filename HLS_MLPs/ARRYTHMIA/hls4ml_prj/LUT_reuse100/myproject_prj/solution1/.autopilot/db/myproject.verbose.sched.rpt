@@ -1,0 +1,703 @@
+
+
+================================================================
+== Vitis HLS Report for 'myproject'
+================================================================
+* Date:           Sat Jul 22 16:22:33 2023
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z007s-clg225-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  7.947 ns|     0.42 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       55|       55|  0.437 us|  0.437 us|   22|   22|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 22, depth = 56
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 56
+* Pipeline : 1
+  Pipeline-0 : II = 22, D = 56, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 53 
+53 --> 54 
+54 --> 55 
+55 --> 56 
+56 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.91>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%fc1_input_read = read i2192 @_ssdm_op_Read.ap_auto.i2192P0A, i2192 %fc1_input" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 57 'read' 'fc1_input_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [14/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 58 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 2.91>
+ST_2 : Operation 59 [13/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 59 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 2.91>
+ST_3 : Operation 60 [12/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 60 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 2.91>
+ST_4 : Operation 61 [11/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 61 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 2.91>
+ST_5 : Operation 62 [10/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 62 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 2.91>
+ST_6 : Operation 63 [9/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 63 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 2.91>
+ST_7 : Operation 64 [8/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 64 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 2.91>
+ST_8 : Operation 65 [7/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 65 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 2.91>
+ST_9 : Operation 66 [6/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 66 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 2.91>
+ST_10 : Operation 67 [5/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 67 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 2.91>
+ST_11 : Operation 68 [4/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 68 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 2.91>
+ST_12 : Operation 69 [3/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 69 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 2.91>
+ST_13 : Operation 70 [2/14] (2.91ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 70 'call' 'call_ret' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 3.13>
+ST_14 : Operation 71 [1/14] (3.13ns)   --->   "%call_ret = call i96 @dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>, i2192 %fc1_input_read" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 71 'call' 'call_ret' <Predicate = true> <Delay = 3.13> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 72 [1/1] (0.00ns)   --->   "%layer2_out_V_0 = extractvalue i96 %call_ret" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 72 'extractvalue' 'layer2_out_V_0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 73 [1/1] (0.00ns)   --->   "%layer2_out_V_1 = extractvalue i96 %call_ret" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 73 'extractvalue' 'layer2_out_V_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 74 [1/1] (0.00ns)   --->   "%layer2_out_V_2 = extractvalue i96 %call_ret" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 74 'extractvalue' 'layer2_out_V_2' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 75 [1/1] (0.00ns)   --->   "%layer2_out_V_3 = extractvalue i96 %call_ret" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 75 'extractvalue' 'layer2_out_V_3' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 76 [1/1] (0.00ns)   --->   "%layer2_out_V_5 = extractvalue i96 %call_ret" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 76 'extractvalue' 'layer2_out_V_5' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 77 [1/1] (0.00ns)   --->   "%layer2_out_V_6 = extractvalue i96 %call_ret" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 77 'extractvalue' 'layer2_out_V_6' <Predicate = true> <Delay = 0.00>
+
+State 15 <SV = 14> <Delay = 2.27>
+ST_15 : Operation 78 [2/2] (2.27ns)   --->   "%call_ret1 = call i48 @relu<ap_fixed<16, 4, 5, 3, 0>, ap_ufixed<8, 1, 4, 0, 0>, relu_config4>, i16 %layer2_out_V_0, i16 %layer2_out_V_1, i16 %layer2_out_V_2, i16 %layer2_out_V_3, i16 %layer2_out_V_5, i16 %layer2_out_V_6" [firmware/myproject.cpp:41]   --->   Operation 78 'call' 'call_ret1' <Predicate = true> <Delay = 2.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 2.58>
+ST_16 : Operation 79 [1/2] (2.58ns)   --->   "%call_ret1 = call i48 @relu<ap_fixed<16, 4, 5, 3, 0>, ap_ufixed<8, 1, 4, 0, 0>, relu_config4>, i16 %layer2_out_V_0, i16 %layer2_out_V_1, i16 %layer2_out_V_2, i16 %layer2_out_V_3, i16 %layer2_out_V_5, i16 %layer2_out_V_6" [firmware/myproject.cpp:41]   --->   Operation 79 'call' 'call_ret1' <Predicate = true> <Delay = 2.58> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 80 [1/1] (0.00ns)   --->   "%layer4_out_V_0 = extractvalue i48 %call_ret1" [firmware/myproject.cpp:41]   --->   Operation 80 'extractvalue' 'layer4_out_V_0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 81 [1/1] (0.00ns)   --->   "%layer4_out_V_1 = extractvalue i48 %call_ret1" [firmware/myproject.cpp:41]   --->   Operation 81 'extractvalue' 'layer4_out_V_1' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 82 [1/1] (0.00ns)   --->   "%layer4_out_V_2 = extractvalue i48 %call_ret1" [firmware/myproject.cpp:41]   --->   Operation 82 'extractvalue' 'layer4_out_V_2' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 83 [1/1] (0.00ns)   --->   "%layer4_out_V_3 = extractvalue i48 %call_ret1" [firmware/myproject.cpp:41]   --->   Operation 83 'extractvalue' 'layer4_out_V_3' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 84 [1/1] (0.00ns)   --->   "%layer4_out_V_5 = extractvalue i48 %call_ret1" [firmware/myproject.cpp:41]   --->   Operation 84 'extractvalue' 'layer4_out_V_5' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 85 [1/1] (0.00ns)   --->   "%layer4_out_V_6 = extractvalue i48 %call_ret1" [firmware/myproject.cpp:41]   --->   Operation 85 'extractvalue' 'layer4_out_V_6' <Predicate = true> <Delay = 0.00>
+
+State 17 <SV = 16> <Delay = 2.91>
+ST_17 : Operation 86 [22/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 86 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 2.91>
+ST_18 : Operation 87 [21/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 87 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 19 <SV = 18> <Delay = 2.91>
+ST_19 : Operation 88 [20/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 88 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 20 <SV = 19> <Delay = 2.91>
+ST_20 : Operation 89 [19/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 89 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 20> <Delay = 2.91>
+ST_21 : Operation 90 [18/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 90 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 22 <SV = 21> <Delay = 2.91>
+ST_22 : Operation 91 [17/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 91 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 23 <SV = 22> <Delay = 2.91>
+ST_23 : Operation 92 [16/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 92 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 24 <SV = 23> <Delay = 2.91>
+ST_24 : Operation 93 [15/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 93 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 25 <SV = 24> <Delay = 2.91>
+ST_25 : Operation 94 [14/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 94 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 26 <SV = 25> <Delay = 2.91>
+ST_26 : Operation 95 [13/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 95 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 27 <SV = 26> <Delay = 2.91>
+ST_27 : Operation 96 [12/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 96 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 28 <SV = 27> <Delay = 2.91>
+ST_28 : Operation 97 [11/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 97 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 29 <SV = 28> <Delay = 2.91>
+ST_29 : Operation 98 [10/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 98 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 30 <SV = 29> <Delay = 2.91>
+ST_30 : Operation 99 [9/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 99 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 31 <SV = 30> <Delay = 2.91>
+ST_31 : Operation 100 [8/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 100 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 32 <SV = 31> <Delay = 2.91>
+ST_32 : Operation 101 [7/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 101 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 33 <SV = 32> <Delay = 2.91>
+ST_33 : Operation 102 [6/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 102 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 34 <SV = 33> <Delay = 2.91>
+ST_34 : Operation 103 [5/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 103 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 35 <SV = 34> <Delay = 2.91>
+ST_35 : Operation 104 [4/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 104 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 36 <SV = 35> <Delay = 2.91>
+ST_36 : Operation 105 [3/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 105 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 37 <SV = 36> <Delay = 2.91>
+ST_37 : Operation 106 [2/22] (2.91ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 106 'call' 'call_ret2' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 38 <SV = 37> <Delay = 3.13>
+ST_38 : Operation 107 [1/22] (3.13ns)   --->   "%call_ret2 = call i256 @dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>, i8 %layer4_out_V_0, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_5, i8 %layer4_out_V_6" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 107 'call' 'call_ret2' <Predicate = true> <Delay = 3.13> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_38 : Operation 108 [1/1] (0.00ns)   --->   "%layer5_out_V_0 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 108 'extractvalue' 'layer5_out_V_0' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 109 [1/1] (0.00ns)   --->   "%layer5_out_V_1 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 109 'extractvalue' 'layer5_out_V_1' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 110 [1/1] (0.00ns)   --->   "%layer5_out_V_2 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 110 'extractvalue' 'layer5_out_V_2' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 111 [1/1] (0.00ns)   --->   "%layer5_out_V_3 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 111 'extractvalue' 'layer5_out_V_3' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 112 [1/1] (0.00ns)   --->   "%layer5_out_V_4 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 112 'extractvalue' 'layer5_out_V_4' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 113 [1/1] (0.00ns)   --->   "%layer5_out_V_5 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 113 'extractvalue' 'layer5_out_V_5' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 114 [1/1] (0.00ns)   --->   "%layer5_out_V_6 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 114 'extractvalue' 'layer5_out_V_6' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 115 [1/1] (0.00ns)   --->   "%layer5_out_V_7 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 115 'extractvalue' 'layer5_out_V_7' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 116 [1/1] (0.00ns)   --->   "%layer5_out_V_8 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 116 'extractvalue' 'layer5_out_V_8' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 117 [1/1] (0.00ns)   --->   "%layer5_out_V_9 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 117 'extractvalue' 'layer5_out_V_9' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 118 [1/1] (0.00ns)   --->   "%layer5_out_V_10 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 118 'extractvalue' 'layer5_out_V_10' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 119 [1/1] (0.00ns)   --->   "%layer5_out_V_11 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 119 'extractvalue' 'layer5_out_V_11' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 120 [1/1] (0.00ns)   --->   "%layer5_out_V_12 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 120 'extractvalue' 'layer5_out_V_12' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 121 [1/1] (0.00ns)   --->   "%layer5_out_V_13 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 121 'extractvalue' 'layer5_out_V_13' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 122 [1/1] (0.00ns)   --->   "%layer5_out_V_14 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 122 'extractvalue' 'layer5_out_V_14' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 123 [1/1] (0.00ns)   --->   "%layer5_out_V_15 = extractvalue i256 %call_ret2" [firmware/nnet_utils/nnet_dense.h:41]   --->   Operation 123 'extractvalue' 'layer5_out_V_15' <Predicate = true> <Delay = 0.00>
+
+State 39 <SV = 38> <Delay = 2.13>
+ST_39 : Operation 124 [18/18] (2.13ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 124 'call' 'call_ret3' <Predicate = true> <Delay = 2.13> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 40 <SV = 39> <Delay = 2.91>
+ST_40 : Operation 125 [17/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 125 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 41 <SV = 40> <Delay = 2.91>
+ST_41 : Operation 126 [16/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 126 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 42 <SV = 41> <Delay = 2.91>
+ST_42 : Operation 127 [15/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 127 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 43 <SV = 42> <Delay = 2.91>
+ST_43 : Operation 128 [14/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 128 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 44 <SV = 43> <Delay = 2.91>
+ST_44 : Operation 129 [13/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 129 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 45 <SV = 44> <Delay = 2.91>
+ST_45 : Operation 130 [12/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 130 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 46 <SV = 45> <Delay = 2.91>
+ST_46 : Operation 131 [11/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 131 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 47 <SV = 46> <Delay = 2.91>
+ST_47 : Operation 132 [10/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 132 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 48 <SV = 47> <Delay = 2.91>
+ST_48 : Operation 133 [9/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 133 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 49 <SV = 48> <Delay = 2.91>
+ST_49 : Operation 134 [8/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 134 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 50 <SV = 49> <Delay = 2.91>
+ST_50 : Operation 135 [7/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 135 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 51 <SV = 50> <Delay = 2.91>
+ST_51 : Operation 136 [6/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 136 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 52 <SV = 51> <Delay = 2.91>
+ST_52 : Operation 137 [5/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 137 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 53 <SV = 52> <Delay = 2.91>
+ST_53 : Operation 138 [4/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 138 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 54 <SV = 53> <Delay = 2.91>
+ST_54 : Operation 139 [3/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 139 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 55 <SV = 54> <Delay = 2.91>
+ST_55 : Operation 140 [2/18] (2.91ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 140 'call' 'call_ret3' <Predicate = true> <Delay = 2.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 56 <SV = 55> <Delay = 7.94>
+ST_56 : Operation 141 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0"   --->   Operation 141 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 142 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1"   --->   Operation 142 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 143 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2192 %fc1_input"   --->   Operation 143 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 144 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i2192 %fc1_input, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 144 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 145 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_0"   --->   Operation 145 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 146 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 146 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 147 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_1"   --->   Operation 147 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 148 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_1, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 148 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 149 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_2"   --->   Operation 149 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 150 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 150 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 151 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_3"   --->   Operation 151 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 152 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_3, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 152 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 153 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_4"   --->   Operation 153 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 154 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_4, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 154 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 155 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_5"   --->   Operation 155 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 156 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_5, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 156 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 157 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_6"   --->   Operation 157 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 158 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_6, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 158 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 159 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_7"   --->   Operation 159 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 160 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_7, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 160 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 161 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_8"   --->   Operation 161 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 162 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_8, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 162 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 163 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_9"   --->   Operation 163 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 164 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_9, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 164 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 165 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_10"   --->   Operation 165 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 166 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_10, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 166 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 167 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_11"   --->   Operation 167 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 168 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_11, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 168 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 169 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_12"   --->   Operation 169 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 170 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_12, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 170 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 171 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_13"   --->   Operation 171 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 172 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_13, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 172 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 173 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_14"   --->   Operation 173 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 174 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_14, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 174 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 175 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer7_out_15"   --->   Operation 175 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 176 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer7_out_15, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 176 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 177 [1/18] (7.94ns)   --->   "%call_ret3 = call i256 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>, i16 %layer5_out_V_0, i16 %layer5_out_V_1, i16 %layer5_out_V_2, i16 %layer5_out_V_3, i16 %layer5_out_V_4, i16 %layer5_out_V_5, i16 %layer5_out_V_6, i16 %layer5_out_V_7, i16 %layer5_out_V_8, i16 %layer5_out_V_9, i16 %layer5_out_V_10, i16 %layer5_out_V_11, i16 %layer5_out_V_12, i16 %layer5_out_V_13, i16 %layer5_out_V_14, i16 %layer5_out_V_15, i18 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 177 'call' 'call_ret3' <Predicate = true> <Delay = 7.94> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_56 : Operation 178 [1/1] (0.00ns)   --->   "%layer7_out_0_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 178 'extractvalue' 'layer7_out_0_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 179 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_0, i16 %layer7_out_0_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 179 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 180 [1/1] (0.00ns)   --->   "%layer7_out_1_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 180 'extractvalue' 'layer7_out_1_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 181 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_1, i16 %layer7_out_1_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 181 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 182 [1/1] (0.00ns)   --->   "%layer7_out_2_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 182 'extractvalue' 'layer7_out_2_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 183 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_2, i16 %layer7_out_2_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 183 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 184 [1/1] (0.00ns)   --->   "%layer7_out_3_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 184 'extractvalue' 'layer7_out_3_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 185 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_3, i16 %layer7_out_3_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 185 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 186 [1/1] (0.00ns)   --->   "%layer7_out_4_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 186 'extractvalue' 'layer7_out_4_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 187 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_4, i16 %layer7_out_4_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 187 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 188 [1/1] (0.00ns)   --->   "%layer7_out_5_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 188 'extractvalue' 'layer7_out_5_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 189 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_5, i16 %layer7_out_5_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 189 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 190 [1/1] (0.00ns)   --->   "%layer7_out_6_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 190 'extractvalue' 'layer7_out_6_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 191 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_6, i16 %layer7_out_6_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 191 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 192 [1/1] (0.00ns)   --->   "%layer7_out_7_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 192 'extractvalue' 'layer7_out_7_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 193 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_7, i16 %layer7_out_7_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 193 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 194 [1/1] (0.00ns)   --->   "%layer7_out_8_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 194 'extractvalue' 'layer7_out_8_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 195 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_8, i16 %layer7_out_8_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 195 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 196 [1/1] (0.00ns)   --->   "%layer7_out_9_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 196 'extractvalue' 'layer7_out_9_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 197 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_9, i16 %layer7_out_9_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 197 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 198 [1/1] (0.00ns)   --->   "%layer7_out_10_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 198 'extractvalue' 'layer7_out_10_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 199 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_10, i16 %layer7_out_10_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 199 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 200 [1/1] (0.00ns)   --->   "%layer7_out_11_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 200 'extractvalue' 'layer7_out_11_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 201 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_11, i16 %layer7_out_11_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 201 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 202 [1/1] (0.00ns)   --->   "%layer7_out_12_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 202 'extractvalue' 'layer7_out_12_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 203 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_12, i16 %layer7_out_12_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 203 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 204 [1/1] (0.00ns)   --->   "%layer7_out_13_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 204 'extractvalue' 'layer7_out_13_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 205 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_13, i16 %layer7_out_13_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 205 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 206 [1/1] (0.00ns)   --->   "%layer7_out_14_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 206 'extractvalue' 'layer7_out_14_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 207 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_14, i16 %layer7_out_14_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 207 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 208 [1/1] (0.00ns)   --->   "%layer7_out_15_ret = extractvalue i256 %call_ret3" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 208 'extractvalue' 'layer7_out_15_ret' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 209 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %layer7_out_15, i16 %layer7_out_15_ret" [firmware/nnet_utils/nnet_activation.h:386]   --->   Operation 209 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 210 [1/1] (0.00ns)   --->   "%ret_ln49 = ret" [firmware/myproject.cpp:49]   --->   Operation 210 'ret' 'ret_ln49' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.33ns, clock uncertainty: 0.416ns.
+
+ <State 1>: 2.91ns
+The critical path consists of the following:
+	wire read operation ('fc1_input_read', firmware/nnet_utils/nnet_dense.h:41) on port 'fc1_input' (firmware/nnet_utils/nnet_dense.h:41) [56]  (0 ns)
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 2>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 3>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 4>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 5>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 6>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 7>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 8>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 9>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 10>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 11>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 12>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 13>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (2.91 ns)
+
+ <State 14>: 3.13ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_fixed<8, 2, 5, 3, 0>, ap_fixed<16, 4, 5, 3, 0>, config2>' [57]  (3.13 ns)
+
+ <State 15>: 2.27ns
+The critical path consists of the following:
+	'call' operation ('call_ret1', firmware/myproject.cpp:41) to 'relu<ap_fixed<16, 4, 5, 3, 0>, ap_ufixed<8, 1, 4, 0, 0>, relu_config4>' [64]  (2.27 ns)
+
+ <State 16>: 2.59ns
+The critical path consists of the following:
+	'call' operation ('call_ret1', firmware/myproject.cpp:41) to 'relu<ap_fixed<16, 4, 5, 3, 0>, ap_ufixed<8, 1, 4, 0, 0>, relu_config4>' [64]  (2.59 ns)
+
+ <State 17>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 18>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 19>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 20>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 21>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 22>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 23>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 24>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 25>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 26>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 27>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 28>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 29>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 30>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 31>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 32>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 33>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 34>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 35>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 36>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 37>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (2.91 ns)
+
+ <State 38>: 3.13ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:41) to 'dense_latency<ap_ufixed<8, 1, 4, 0, 0>, ap_fixed<16, 4, 5, 3, 0>, config5>' [71]  (3.13 ns)
+
+ <State 39>: 2.14ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.14 ns)
+
+ <State 40>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 41>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 42>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 43>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 44>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 45>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 46>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 47>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 48>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 49>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 50>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 51>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 52>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 53>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 54>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 55>: 2.91ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (2.91 ns)
+
+ <State 56>: 7.95ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/nnet_utils/nnet_activation.h:386) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config7>' [88]  (7.95 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="myproject.cpp" path="/home/argykokk/Desktop/one_multiplication/MLPs/mnist/hls4ml_prj/LUT_reuse1/firmware/myproject.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_data" path="/home/argykokk/Desktop/one_multiplication/MLPs/mnist/hls4ml_prj/LUT_reuse1/tb_data"/>
+    <originFiles name="weights" path="/home/argykokk/Desktop/one_multiplication/MLPs/mnist/hls4ml_prj/LUT_reuse1/firmware/weights"/>
+    <originFiles name="myproject_test.cpp" path="/home/argykokk/Desktop/one_multiplication/MLPs/mnist/hls4ml_prj/LUT_reuse1/myproject_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

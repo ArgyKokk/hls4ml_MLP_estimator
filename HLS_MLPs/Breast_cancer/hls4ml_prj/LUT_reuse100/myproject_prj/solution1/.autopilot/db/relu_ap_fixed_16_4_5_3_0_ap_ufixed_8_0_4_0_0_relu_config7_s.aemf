@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1689760419882">
+  <ports id="1" name="p_read1" type="PortType" originalName="data.V[1]" coreId="1715172207" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="p_read2" type="PortType" originalName="data.V[2]" coreId="1192678264" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="12" name="ap_return_0" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <ports id="13" name="ap_return_1" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="50" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="52" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="53" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="58" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="65" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="72" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="83" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="84" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="87" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="113" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="127" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="129" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="133" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="135" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
+  <edges id="141" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
+  <edges id="143" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="149" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.34"/>
+  <edges id="151" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.35"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="155" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="158" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="159" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.38"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.38"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
+  <edges id="163" source_obj="//@regions.0/@basic_blocks.0/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.0/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.0/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.42" sink_obj="//@ports.2"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.42" sink_obj="//@ports.3"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="199" pipe_depth="1" RegionName="relu&lt;ap_fixed&lt;16, 4, 5, 3, 0>, ap_ufixed&lt;8, 0, 4, 0, 0>, relu_config7>">
+    <basic_blocks id="47" name="relu&lt;ap_fixed&lt;16, 4, 5, 3, 0>, ap_ufixed&lt;8, 0, 4, 0, 0>, relu_config7>" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="3" name="p_read22" lineNumber="39" originalName="data.V[2]" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory=".." coreId="1193121264" contextFuncName="relu_ap_fixed_16_4_AP_TRN_AP_WRAP_0_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_relu_config7_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="39" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="relu&amp;lt;ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, relu_config7&amp;gt;"/>
+        <dataInputObjs>p_read2</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="4" name="p_read11" lineNumber="39" originalName="data.V[1]" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory=".." coreId="1763731310" contextFuncName="relu_ap_fixed_16_4_AP_TRN_AP_WRAP_0_ap_ufixed_8_0_AP_RND_CONV_AP_SAT_0_relu_config7_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="39" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="relu&amp;lt;ap_fixed&amp;lt;16, 4, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;8, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, relu_config7&amp;gt;"/>
+        <dataInputObjs>p_read1</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="6" name="icmp_ln1547" lineNumber="1547" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln1547_fu_60_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.13" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="1547" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="trunc_ln1" lineNumber="717" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln1_fu_66_p4" coreId="1192519312" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="partselect" m_display="0" m_topoIndex="4" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="717" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="tmp" lineNumber="722" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_fu_76_p3" coreId="1192475392" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="722" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="tmp_6" lineNumber="722" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_6_fu_84_p3" coreId="1192361552" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="6" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="722" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="trunc_ln727" lineNumber="727" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln727_fu_92_p1" coreId="1192693440" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="3" opcode="trunc" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="727" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="icmp_ln727" lineNumber="727" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln727_fu_96_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.98" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="727" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="tmp_7" lineNumber="403" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_7_fu_102_p3" coreId="1192461136" contextFuncName="quantization_adjust" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="9" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="403" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="or_ln412" lineNumber="412" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="or_ln412_fu_110_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="quantization_adjust" bitwidth="1" opcode="or" m_display="0" m_topoIndex="10" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="412" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="and_ln412" lineNumber="412" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="and_ln412_fu_116_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="quantization_adjust" bitwidth="1" opcode="and" m_display="0" m_topoIndex="11" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="412" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="zext_ln415" lineNumber="415" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln415_fu_122_p1" coreId="1192651888" contextFuncName="quantization_adjust" bitwidth="8" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="415" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="add_ln415" lineNumber="415" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="add_ln415_fu_126_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="quantization_adjust" bitwidth="8" opcode="add" m_display="0" m_delay="1.3" m_topoIndex="13" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="415" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="tmp_8" lineNumber="416" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_8_fu_132_p3" coreId="1192690288" contextFuncName="quantization_adjust" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="14" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="416" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="p_Result_29_1" lineNumber="775" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="p_Result_29_1_fu_140_p4" coreId="1192077568" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="4" opcode="partselect" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="775" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="icmp_ln1049" lineNumber="1049" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="icmp_ln1049_fu_150_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_eq_16_false" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.96" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" linenumber="1049" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator==&amp;lt;16, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="icmp_ln777" lineNumber="777" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln777_fu_156_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.96" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="777" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="select_ln787" lineNumber="787" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="select_ln787_fu_162_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="select" m_display="0" m_topoIndex="18" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="787" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="select_ln403" lineNumber="403" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="select_ln403_fu_170_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="quantization_adjust" bitwidth="1" opcode="select" m_display="0" m_topoIndex="19" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="403" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="select_ln394" lineNumber="394" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="select_ln394_fu_178_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="overflow_adjust" bitwidth="8" opcode="select" m_display="0" m_delay="0.81" m_topoIndex="20" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="394" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="overflow_adjust"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="select_ln1547" lineNumber="1547" originalName="res.V[1]" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="select_ln1547_fu_186_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="select" m_display="0" m_delay="0.44" m_topoIndex="21" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="1547" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>insertvalue</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="icmp_ln1547_1" lineNumber="1547" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln1547_1_fu_194_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.13" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="1547" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="trunc_ln717_2" lineNumber="717" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln717_2_fu_200_p4" coreId="1192478104" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="partselect" m_display="0" m_topoIndex="23" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="717" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_9" lineNumber="722" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_9_fu_210_p3" coreId="1192477232" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="24" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="722" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="tmp_10" lineNumber="722" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_10_fu_218_p3" coreId="1191777320" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="25" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="722" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="trunc_ln727_1" lineNumber="727" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln727_1_fu_226_p1" coreId="1192007312" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="3" opcode="trunc" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="727" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="icmp_ln727_1" lineNumber="727" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln727_1_fu_230_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.98" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="727" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp_11" lineNumber="403" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_11_fu_236_p3" coreId="1192008768" contextFuncName="quantization_adjust" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="28" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="403" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="or_ln412_1" lineNumber="412" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="or_ln412_1_fu_244_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="quantization_adjust" bitwidth="1" opcode="or" m_display="0" m_topoIndex="29" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="412" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="and_ln412_1" lineNumber="412" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="and_ln412_1_fu_250_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="quantization_adjust" bitwidth="1" opcode="and" m_display="0" m_topoIndex="30" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="412" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="zext_ln415_1" lineNumber="415" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln415_1_fu_256_p1" coreId="1193121856" contextFuncName="quantization_adjust" bitwidth="8" opcode="zext" m_display="0" m_topoIndex="31" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="415" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="add_ln415_1" lineNumber="415" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="add_ln415_1_fu_260_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="quantization_adjust" bitwidth="8" opcode="add" m_display="0" m_delay="1.3" m_topoIndex="32" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="415" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="tmp_12" lineNumber="416" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_12_fu_266_p3" coreId="0" contextFuncName="quantization_adjust" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="33" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="416" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="p_Result_29_2" lineNumber="775" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="p_Result_29_2_fu_274_p4" coreId="0" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="4" opcode="partselect" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="775" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="icmp_ln1049_1" lineNumber="1049" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="icmp_ln1049_1_fu_284_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_eq_16_false" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.96" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" linenumber="1049" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator==&amp;lt;16, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="icmp_ln777_1" lineNumber="777" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln777_1_fu_290_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.96" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="777" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="select_ln787_1" lineNumber="787" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="select_ln787_1_fu_296_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_assign_16_4_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="select" m_display="0" m_topoIndex="37" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="787" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator=&amp;lt;16, 4, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="select_ln403_1" lineNumber="403" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="select_ln403_1_fu_304_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="quantization_adjust" bitwidth="1" opcode="select" m_display="0" m_topoIndex="38" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="403" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="quantization_adjust"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="select_ln394_1" lineNumber="394" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="select_ln394_1_fu_312_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="overflow_adjust" bitwidth="8" opcode="select" m_display="0" m_delay="0.81" m_topoIndex="39" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="394" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="overflow_adjust"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="select_ln1547_1" lineNumber="1547" originalName="res.V[2]" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="select_ln1547_1_fu_320_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="select" m_display="0" m_delay="0.44" m_topoIndex="40" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="1547" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>insertvalue</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="newret" lineNumber="1547" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="1192708656" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="insertvalue" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="1547" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>insertvalue</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="newret2" lineNumber="1547" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="1192694160" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="insertvalue" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="1547" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>insertvalue</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>ret</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="_ln1547" lineNumber="1547" fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="1192954768" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" opcode="ret" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h" linenumber="1547" fileDirectory="/home/argykokk/Desktop/one_multiplication/MLPs/Breast_cancer/hls4ml_prj/LUT_reuse100" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>insertvalue</dataInputObjs>
+        <dataOutputObjs>ap_return_0</dataOutputObjs>
+        <dataOutputObjs>ap_return_1</dataOutputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h">
+        <validLinenumbers>1547</validLinenumbers>
+        <validLinenumbers>717</validLinenumbers>
+        <validLinenumbers>722</validLinenumbers>
+        <validLinenumbers>727</validLinenumbers>
+        <validLinenumbers>403</validLinenumbers>
+        <validLinenumbers>412</validLinenumbers>
+        <validLinenumbers>415</validLinenumbers>
+        <validLinenumbers>416</validLinenumbers>
+        <validLinenumbers>775</validLinenumbers>
+        <validLinenumbers>777</validLinenumbers>
+        <validLinenumbers>787</validLinenumbers>
+        <validLinenumbers>394</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>1049</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_activation.h">
+        <validLinenumbers>39</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="p_Result_29_2_fu_274">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln717_2_fu_200">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1547_fu_186">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln403_1_fu_304">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln727_fu_92">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="newret_fu_328">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln415_fu_122">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln394_1_fu_312">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_102">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln777_fu_156">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln415_fu_126">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1547_1_fu_194">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_84">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln787_1_fu_296">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1547_1_fu_320">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_fu_218">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_29_1_fu_140">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln415_1_fu_260">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_11_fu_236">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln412_fu_116">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln727_1_fu_230">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln412_1_fu_250">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1049_fu_150">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="newret2_fu_334">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1547_fu_60">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_76">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln727_1_fu_226">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln412_1_fu_244">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln394_fu_178">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_fu_210">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_132">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln403_fu_170">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln787_fu_162">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1_fu_66">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_12_fu_266">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln777_1_fu_290">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln727_fu_96">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1049_1_fu_284">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln412_fu_110">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln415_1_fu_256">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="p_read22_read_fu_48">
+    <nodeIds>3</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_read11_read_fu_54">
+    <nodeIds>4</nodeIds>
+  </ioNodes>
+  <ioPorts name="p_read1">
+    <contents name="read">
+      <nodeIds>4</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="p_read2">
+    <contents name="read">
+      <nodeIds>3</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return_0">
+    <contents name="ret">
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return_1">
+    <contents name="ret">
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="relu_ap_fixed_16_4_5_3_0_ap_ufixed_8_0_4_0_0_relu_config7_s" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>47</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
